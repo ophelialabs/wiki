@@ -7,24 +7,28 @@ document.addEventListener('DOMContentLoaded', () => {
     const rightSidebar = document.querySelector('.right-sidebar');
     const main = document.querySelector('main');
 
-    const articles = [
-        {
-            title: 'Welcome to the Wiki',
-            path: 'docs/welcome.html'
-        },
-        {
-            title: 'Getting Started',
-            path: 'docs/getting-started.html'
-        },
-        {
-            title: 'Style Guide',
-            path: 'docs/style-guide.html'
-        }
-    ];
+    let articles = [];
 
-    function renderArticleList() {
+    async function fetchArticles() {
+        try {
+            const response = await fetch('articles.json');
+            if (!response.ok) {
+                throw new Error('Could not fetch articles.json');
+            }
+            articles = await response.json();
+            renderArticleList();
+            if (articles.length > 0) {
+                loadArticle(articles[0].path);
+            }
+        } catch (error) {
+            console.error('Error fetching articles:', error);
+            articleList.innerHTML = '<li>Failed to load articles.</li>';
+        }
+    }
+
+    function renderArticleList(articlesToRender = articles) {
         articleList.innerHTML = '';
-        articles.forEach(article => {
+        articlesToRender.forEach(article => {
             const li = document.createElement('li');
             const a = document.createElement('a');
             a.href = `#${article.path}`;
@@ -44,8 +48,8 @@ document.addEventListener('DOMContentLoaded', () => {
             if (!response.ok) {
                 throw new Error(`Could not load article: ${path}`);
             }
-            const content = await response.text();
-            articleContent.innerHTML = content;
+            const markdown = await response.text();
+            articleContent.innerHTML = marked.parse(markdown);
             generateToc();
         } catch (error) {
             articleContent.innerHTML = `<p>Error loading article: ${error.message}</p>`;
@@ -58,7 +62,9 @@ document.addEventListener('DOMContentLoaded', () => {
         headings.forEach(heading => {
             const li = document.createElement('li');
             const a = document.createElement('a');
-            a.href = `#${heading.id}`;
+            const id = heading.textContent.toLowerCase().replace(/\s+/g, '-');
+            heading.id = id;
+            a.href = `#${id}`;
             a.textContent = heading.textContent;
             li.appendChild(a);
             tocList.appendChild(li);
@@ -66,26 +72,10 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     function searchArticles(query) {
-        const filteredArticles = articles.filter(article => 
+        const filteredArticles = articles.filter(article =>
             article.title.toLowerCase().includes(query.toLowerCase())
         );
-        renderFilteredArticleList(filteredArticles);
-    }
-
-    function renderFilteredArticleList(filteredArticles) {
-        articleList.innerHTML = '';
-        filteredArticles.forEach(article => {
-            const li = document.createElement('li');
-            const a = document.createElement('a');
-            a.href = `#${article.path}`;
-            a.textContent = article.title;
-            a.addEventListener('click', (e) => {
-                e.preventDefault();
-                loadArticle(article.path);
-            });
-            li.appendChild(a);
-            articleList.appendChild(li);
-        });
+        renderArticleList(filteredArticles);
     }
 
     searchInput.addEventListener('input', (e) => {
@@ -98,8 +88,5 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     // Initial load
-    renderArticleList();
-    if (articles.length > 0) {
-        loadArticle(articles[0].path);
-    }
+    fetchArticles();
 });

@@ -1,0 +1,14 @@
+[
+    {
+        "title": "Welcome to the Wiki",
+        "path": "docs/welcome.md"
+    },
+    {
+        "title": "Getting Started",
+        "path": "docs/getting-started.md"
+    },
+    {
+        "title": "Style Guide",
+        "path": "docs/style-guide.md"
+    }
+]
