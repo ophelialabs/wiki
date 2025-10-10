@@ -1,14 +1,26 @@
 [
     {
         "title": "Welcome to the Wiki",
-        "path": "docs/welcome.md"
+        "path": "docs/general/welcome.md"
     },
     {
         "title": "Getting Started",
-        "path": "docs/getting-started.md"
+        "path": "docs/general/getting-started.md"
     },
     {
         "title": "Style Guide",
-        "path": "docs/style-guide.md"
+        "path": "docs/development/style-guide.md"
+    },
+    {
+        "title": "Architecture Overview",
+        "path": "docs/architecture/arch.md"
+    },
+    {
+        "title": "DevOps",
+        "path": "docs/cloud-and-devops/devops.md"
+    },
+    {
+        "title": "Development",
+        "path": "docs/development/dev.md"
     }
 ]
