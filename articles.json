@@ -22,5 +22,21 @@
     {
         "title": "Development",
         "path": "docs/development/dev.md"
+    },
+        {
+        "title": "SEO",
+        "path": "docs/seo/analytics.html"
+    },
+    {
+        "title": "SEO Best Practices",
+        "path": "docs/seo/best-practices.html"
+    },
+    {
+        "title": "SEO Enterprise",
+        "path": "docs/seo/enterprise.html"
+    },
+    {
+        "title": "Security",
+        "path": "docs/security/security.md"
     }
 ]
