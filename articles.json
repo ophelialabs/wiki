@@ -16,14 +16,22 @@
         "path": "docs/architecture/arch.md"
     },
     {
+        "title": "Development",
+        "path": "docs/development/dev.md"
+    },
+    {
+        "title": "Enterprise Linux",
+        "path": "linux/el9_setup.html"
+    },
+    {
+        "title": "GCPPCA",
+        "path": "jlabclouds/GCPPCA.html"
+    },
+    {
         "title": "DevOps",
         "path": "docs/cloud-and-devops/devops.md"
     },
     {
-        "title": "Development",
-        "path": "docs/development/dev.md"
-    },
-        {
         "title": "SEO",
         "path": "docs/seo/analytics.html"
     },
