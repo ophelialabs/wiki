@@ -36,6 +36,10 @@
         "path": "docs/seo/enterprise.html"
     },
     {
+        "title": "IOT",
+        "path": "ddocs/iot/messageprotocols.html"
+    },
+    {
         "title": "Security",
         "path": "docs/security/security.md"
     }
