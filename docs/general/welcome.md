@@ -52,7 +52,7 @@ A comprehensive overview of engineering roles, responsibilities, tech stack, and
 ---
 
 ## Cart & Checkout
-
+<img src="scalableairoadmap.jpg" />
 - **Scope:** Online, brick-and-mortar, Shipt, Google Express; **critical impact on guest experience**
 - **Languages:** [Kotlin](https://kotlinlang.org/), [Groovy](https://groovy-lang.org/), [JAM](https://lets-jam.org/docs/jam/index.html)
 - **Frameworks:** [Micronaut](https://micronaut.io/), [Ratpack](https://ratpack.io/)
