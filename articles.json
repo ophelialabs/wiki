@@ -40,7 +40,11 @@
         "path": "docs/iot/messageprotocols.html"
     },
     {
+        "title": "Big Data",
+        "path": "docs/iot/messageprotocols.html"
+    },
+    {
         "title": "Security",
-        "path": "docs/security/security.md"
+        "path": "docs/bigdata/datalakehouse.html"
     }
 ]
