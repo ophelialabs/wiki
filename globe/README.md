@@ -52,3 +52,6 @@ For general use and navigation
     Apple Maps: A standard option for Apple device users that offers 3D maps and a "Look Around" feature for street-level views in some areas.
     HERE WeGo: Formerly known as HERE Maps, this app is a solid alternative to Google Maps for general navigation. It provides features like offline maps, route planning, and public transit information.
     Mapbox: A popular mapping platform for developers that offers customizable maps and navigation. Its satellite imagery is often sourced from the same providers as other mapping services.
+
+https://samples.azuremaps.com/
+https://github.com/Azure-Samples/AzureMapsCodeSamples/blob/main/Samples/3D-layer/babylon.js/babylon.html

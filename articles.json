@@ -54,5 +54,9 @@
     {
         "title": "Security",
         "path": "docs/security/security.md"
+    },
+    {
+        "title": "Globe",
+        "path": "globe/README.md"
     }
 ]
