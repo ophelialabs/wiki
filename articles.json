@@ -61,6 +61,10 @@
     },
     {
         "title": "Ophelia",
-        "path": "Ophelia/index.html"
+        "path": "Ophelia/stack/stack.html"
+    },
+    {
+        "title": "App Pipeline",
+        "path": "Ophelia/pipeline/tabs.html"
     }
 ]
