@@ -13,7 +13,7 @@
     },
     {
         "title": "Further Reading",
-        "path": "Nasa/pages/furtherreading.html"
+        "path": "Globe/Nasa/pages/furtherreading.html"
     },
     {
         "title": "Architecture Overview",
@@ -57,6 +57,10 @@
     },
     {
         "title": "Globe",
-        "path": "globe/README.md"
+        "path": "Globe/README.md"
+    },
+    {
+        "title": "Ophelia",
+        "path": "Ophelia/index.html"
     }
 ]
