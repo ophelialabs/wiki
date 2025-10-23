@@ -1,4 +1,4 @@
-To integrate a scheduling system that aligns with the MyTimeGo app, you can follow these steps:
+To integrate a scheduling system that aligns with the EmployeeTime app, you can follow these steps:
 
 ### 1. **Backend API for Scheduling**
 
@@ -75,6 +75,6 @@ To integrate a scheduling system that aligns with the MyTimeGo app, you can foll
 
 ### 6. **Mobile-Friendly Design**
 
-    - Ensure the UI is responsive and works well on mobile devices, aligning with the MyTimeGo app's design.
+    - Ensure the UI is responsive and works well on mobile devices, aligning with the EmployeeTime app's design.
 
-By implementing these steps, you can create a robust scheduling system that integrates seamlessly with the MyTimeGo app.
+By implementing these steps, you can create a robust scheduling system that integrates seamlessly with the EmployeeTime app.
