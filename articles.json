@@ -12,6 +12,10 @@
         "path": "docs/development/style-guide.md"
     },
     {
+        "title": "Further Reading",
+        "path": "jlabclouds/furtherreading.html"
+    },
+    {
         "title": "Architecture Overview",
         "path": "docs/architecture/arch.md"
     },
