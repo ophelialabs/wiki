@@ -36,6 +36,10 @@
         "path": "docs/cloud-and-devops/devops.md"
     },
     {
+        "title": "Geofence",
+        "path": "docs/geo/index.html"
+    },
+    {
         "title": "SEO",
         "path": "docs/seo/enterprise.html"
     },
