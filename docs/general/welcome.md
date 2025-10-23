@@ -52,7 +52,7 @@ A comprehensive overview of engineering roles, responsibilities, tech stack, and
 ---
 
 ## Cart & Checkout
-<img src="scalableairoadmap.jpg" />
+<img src="scalableairoadmap.jpg" style="100px" />
 - **Scope:** Online, brick-and-mortar, Shipt, Google Express; **critical impact on guest experience**
 - **Languages:** [Kotlin](https://kotlinlang.org/), [Groovy](https://groovy-lang.org/), [JAM](https://lets-jam.org/docs/jam/index.html)
 - **Frameworks:** [Micronaut](https://micronaut.io/), [Ratpack](https://ratpack.io/)
@@ -96,6 +96,8 @@ fun getCart(): HttpResponse<Cart> = HttpResponse.ok(cartService.fetchCart())
 
 - **Experience:** [Java/J2EE](https://www.oracle.com/java/technologies/appmodel.html), [Kotlin](https://kotlinlang.org/docs/home.html), SQL/NoSQL (RDBMS: [SQL Server](https://www.microsoft.com/en-us/sql-server), [OCI DB](https://www.oracle.com/database/))([Postgres](https://www.postgresql.org/), [MongoDB](https://www.mongodb.com/), [Cassandra](https://cassandra.apache.org/_/index.html), [Graph DB](https://graphdb.ontotext.com/)), Python, Ruby, [Chef](https://www.chef.io/), [Drone](https://drone.io/), [Kubernetes containers](https://kubernetes.io/docs/concepts/containers/), Cloud tech.
 - **Lifecycle:** At least one full-cycle implementation of a major project.
+- DB Browser for SQLite
+- SQL Server
 
 ### Lead Engineer
 
