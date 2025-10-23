@@ -119,7 +119,9 @@
 }
 </style>
 <script>
+    document.addEventListener('DOMContentLoaded', function() {
     // Initialize modals
     const modalTriggerList = document.querySelectorAll('[data-bs-toggle="modal"]');
     [...modalTriggerList].forEach(el => new bootstrap.Modal(el));
+    }
 </script>
