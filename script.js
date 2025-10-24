@@ -41,12 +41,6 @@ document.addEventListener('DOMContentLoaded', () => {
                 const expandIcon = document.createElement('i');
                 expandIcon.className = 'bi bi-chevron-right';
                 li.appendChild(expandIcon);
-            }
-            
-            const a = document.createElement('a');
-            a.href = article.path ? `#${article.path}` : '#';
-            a.textContent = article.title;
-            li.appendChild(a);
                 
                 const subList = document.createElement('ul');
                 subList.style.display = 'none';
@@ -73,6 +67,10 @@ document.addEventListener('DOMContentLoaded', () => {
                     subList.style.display = subList.style.display === 'none' ? 'block' : 'none';
                 });
             }
+            
+            const a = document.createElement('a');
+            a.href = article.path ? `#${article.path}` : '#';
+            a.textContent = article.title;
             
             a.addEventListener('click', (e) => {
                 e.preventDefault();
