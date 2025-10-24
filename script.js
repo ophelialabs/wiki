@@ -11,18 +11,24 @@ document.addEventListener('DOMContentLoaded', () => {
 
     async function fetchArticles() {
         try {
-            const response = await fetch('articles.json');
+            const response = await fetch('/articles.json');
             if (!response.ok) {
-                throw new Error('Could not fetch articles.json');
+                throw new Error(`Failed to fetch articles.json: ${response.status} ${response.statusText}`);
             }
-            articles = await response.json();
-            renderArticleList();
-            if (articles.length > 0) {
-                loadArticle(articles[0].path);
+            const text = await response.text();
+            try {
+                articles = JSON.parse(text);
+                console.log('Articles loaded:', articles); // Debug log
+                renderArticleList();
+                if (articles.length > 0) {
+                    loadArticle(articles[0].path);
+                }
+            } catch (parseError) {
+                throw new Error(`Failed to parse articles.json: ${parseError.message}`);
             }
         } catch (error) {
-            console.error('Error fetching articles:', error);
-            articleList.innerHTML = '<li>Failed to load articles.</li>';
+            console.error('Error loading articles:', error);
+            articleList.innerHTML = `<li class="error">Failed to load articles: ${error.message}</li>`;
         }
     }
 
@@ -78,15 +84,24 @@ document.addEventListener('DOMContentLoaded', () => {
 
     async function loadArticle(path) {
         try {
-            const response = await fetch(path);
+            console.log('Loading article from path:', path); // Debug log
+            const response = await fetch('/' + path);
             if (!response.ok) {
-                throw new Error(`Could not load article: ${path}`);
+                throw new Error(`Could not load article: ${path} (${response.status} ${response.statusText})`);
             }
-            const markdown = await response.text();
-            articleContent.innerHTML = marked.parse(markdown);
+            const content = await response.text();
+            console.log('Article content loaded, length:', content.length); // Debug log
+            
+            // Check if it's markdown or HTML
+            if (path.endsWith('.md')) {
+                articleContent.innerHTML = marked.parse(content);
+            } else {
+                articleContent.innerHTML = content;
+            }
             generateToc();
         } catch (error) {
-            articleContent.innerHTML = `<p>Error loading article: ${error.message}</p>`;
+            console.error('Error loading article:', error); // Debug log
+            articleContent.innerHTML = `<p class="error">Error loading article: ${error.message}</p>`;
         }
     }
 
