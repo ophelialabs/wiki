@@ -36,16 +36,17 @@ document.addEventListener('DOMContentLoaded', () => {
         articleList.innerHTML = '';
         articlesToRender.forEach(article => {
             const li = document.createElement('li');
-            const a = document.createElement('a');
-            a.href = article.path ? `#${article.path}` : '#';
-            a.textContent = article.title;
-            li.appendChild(a);
             
             if (article.children) {
                 const expandIcon = document.createElement('i');
                 expandIcon.className = 'bi bi-chevron-right';
-                expandIcon.style.marginRight = '5px';
-                li.insertBefore(expandIcon, a);
+                li.appendChild(expandIcon);
+            }
+            
+            const a = document.createElement('a');
+            a.href = article.path ? `#${article.path}` : '#';
+            a.textContent = article.title;
+            li.appendChild(a);
                 
                 const subList = document.createElement('ul');
                 subList.style.display = 'none';

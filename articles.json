@@ -32,11 +32,11 @@
         "children": [
             {
                 "title": "Google Cloud Professional Cloud Architect",
-                "path": "jlabclouds/GCPPCA.md"
+                "path": "docs/general/Exams/Pages/GCPPCA.md"
             },
             {
                 "title": "Red Hat Certified System Administrator",
-                "path": "jlabclouds/RHCSA.md"
+                "path": "docs/general/Exams/Pages/RHCSA.md"
             }
         ]
     },
