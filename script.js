@@ -33,10 +33,44 @@ document.addEventListener('DOMContentLoaded', () => {
             const a = document.createElement('a');
             a.href = `#${article.path}`;
             a.textContent = article.title;
+            
+            if (article.children) {
+                const expandIcon = document.createElement('i');
+                expandIcon.className = 'bi bi-chevron-right';
+                expandIcon.style.marginRight = '5px';
+                li.insertBefore(expandIcon, a);
+                
+                const subList = document.createElement('ul');
+                subList.style.display = 'none';
+                subList.className = 'nested';
+                
+                article.children.forEach(child => {
+                    const childLi = document.createElement('li');
+                    const childA = document.createElement('a');
+                    childA.href = `#${child.path}`;
+                    childA.textContent = child.title;
+                    childA.addEventListener('click', (e) => {
+                        e.preventDefault();
+                        loadArticle(child.path);
+                    });
+                    childLi.appendChild(childA);
+                    subList.appendChild(childLi);
+                });
+                
+                li.appendChild(subList);
+                
+                expandIcon.addEventListener('click', () => {
+                    expandIcon.classList.toggle('bi-chevron-down');
+                    expandIcon.classList.toggle('bi-chevron-right');
+                    subList.style.display = subList.style.display === 'none' ? 'block' : 'none';
+                });
+            }
+            
             a.addEventListener('click', (e) => {
                 e.preventDefault();
                 loadArticle(article.path);
             });
+            
             li.appendChild(a);
             articleList.appendChild(li);
         });

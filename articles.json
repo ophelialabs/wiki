@@ -29,7 +29,17 @@
     },
     {
         "title": "Exams",
-        "path": "docs/general/Exams/index.md"
+        "path": "docs/general/Exams/index.md",
+        "children": [
+            {
+                "title": "Google Cloud Professional Cloud Architect",
+                "path": "jlabclouds/GCPPCA.md"
+            },
+            {
+                "title": "Red Hat Certified System Administrator",
+                "path": "jlabclouds/RHCSA.md"
+            }
+        ]
     },
     {
         "title": "DevOps",
