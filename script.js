@@ -47,8 +47,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const a = document.createElement('a');
             a.href = article.path ? `#${article.path}` : '#';
             a.textContent = article.title;
-            li.appendChild(a);
-                
+            if (article.children) {
                 const subList = document.createElement('ul');
                 subList.style.display = 'none';
                 subList.className = 'nested';
