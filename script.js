@@ -36,15 +36,18 @@ document.addEventListener('DOMContentLoaded', () => {
         articleList.innerHTML = '';
         articlesToRender.forEach(article => {
             const li = document.createElement('li');
-            const a = document.createElement('a');
-            a.href = `#${article.path}`;
-            a.textContent = article.title;
             
             if (article.children) {
                 const expandIcon = document.createElement('i');
                 expandIcon.className = 'bi bi-chevron-right';
                 expandIcon.style.marginRight = '5px';
-                li.insertBefore(expandIcon, a);
+                li.appendChild(expandIcon);
+            }
+            
+            const a = document.createElement('a');
+            a.href = article.path ? `#${article.path}` : '#';
+            a.textContent = article.title;
+            li.appendChild(a);
                 
                 const subList = document.createElement('ul');
                 subList.style.display = 'none';
@@ -94,7 +97,7 @@ document.addEventListener('DOMContentLoaded', () => {
     async function loadArticle(path) {
         try {
             console.log('Loading article from path:', path); // Debug log
-            const response = await fetch('/' + path);
+            const response = await fetch(path);
             if (!response.ok) {
                 throw new Error(`Could not load article: ${path} (${response.status} ${response.statusText})`);
             }
@@ -148,16 +151,9 @@ document.addEventListener('DOMContentLoaded', () => {
     // Initial load
     fetchArticles();
 
-    // Initialize modals
-    const modalTriggerList = document.querySelectorAll('[data-bs-toggle="modal"]');
-    modalTriggerList.forEach(el => new bootstrap.Modal(el));
-    });
-
-    // Load Tech Stack
-    fetch('Ophelia/stack/index.html')
-        .then(res => res.ok ? res.text() : Promise.reject(res))
-        .then(data => {
-            const header = document.getElementById('techstack-placeholder');
-            if (header) header.innerHTML = data;
-        })
-        .catch(() => {});
+    // Initialize modals if Bootstrap is loaded
+    if (typeof bootstrap !== 'undefined') {
+        const modalTriggerList = document.querySelectorAll('[data-bs-toggle="modal"]');
+        modalTriggerList.forEach(el => new bootstrap.Modal(el));
+    }
+});
