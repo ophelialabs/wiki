@@ -29,7 +29,6 @@
     },
     {
         "title": "Exams",
-        "path": "docs/general/Exams/index.md",
         "children": [
             {
                 "title": "Google Cloud Professional Cloud Architect",

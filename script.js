@@ -74,7 +74,16 @@ document.addEventListener('DOMContentLoaded', () => {
             
             a.addEventListener('click', (e) => {
                 e.preventDefault();
-                loadArticle(article.path);
+                if (article.path) {
+                    loadArticle(article.path);
+                } else if (article.children && article.children.length > 0) {
+                    // If it's a parent without content, toggle children visibility
+                    const icon = li.querySelector('i');
+                    const subList = li.querySelector('.nested');
+                    if (icon && subList) {
+                        icon.click();
+                    }
+                }
             });
             
             li.appendChild(a);
