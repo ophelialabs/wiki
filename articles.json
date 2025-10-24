@@ -25,11 +25,11 @@
     },
     {
         "title": "Enterprise Linux",
-        "path": "linux/el9_setup.html"
+        "path": "linux/pages/el9_setup.html"
     },
     {
-        "title": "GCPPCA",
-        "path": "jlabclouds/GCPPCA.md"
+        "title": "Exams",
+        "path": "docs/general/Exams/index.md"
     },
     {
         "title": "DevOps",
