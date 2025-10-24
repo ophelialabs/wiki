@@ -36,11 +36,13 @@ document.addEventListener('DOMContentLoaded', () => {
         articleList.innerHTML = '';
         articlesToRender.forEach(article => {
             const li = document.createElement('li');
+            const itemHeader = document.createElement('div');
+            itemHeader.className = 'item-header';
             
             if (article.children) {
                 const expandIcon = document.createElement('i');
                 expandIcon.className = 'bi bi-chevron-right';
-                li.appendChild(expandIcon);
+                itemHeader.appendChild(expandIcon);
                 
                 const subList = document.createElement('ul');
                 subList.style.display = 'none';
@@ -71,6 +73,8 @@ document.addEventListener('DOMContentLoaded', () => {
             const a = document.createElement('a');
             a.href = article.path ? `#${article.path}` : '#';
             a.textContent = article.title;
+            itemHeader.appendChild(a);
+            li.appendChild(itemHeader);
             
             a.addEventListener('click', (e) => {
                 e.preventDefault();
@@ -86,7 +90,6 @@ document.addEventListener('DOMContentLoaded', () => {
                 }
             });
             
-            li.appendChild(a);
             articleList.appendChild(li);
         });
     }

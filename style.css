@@ -104,19 +104,26 @@ h2 {
 #article-list li {
     position: relative;
     margin: 4px 0;
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
 }
 
-#article-list li > a {
+#article-list li .item-header {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+#article-list li .item-header a {
     flex: 1;
 }
 
-#article-list li > i {
+#article-list li .item-header i {
     padding: 0.5rem 0.25rem;
     display: flex;
     align-items: center;
+}
+
+#article-list .nested {
+    margin-top: 4px;
 }
 
 #article-list li a {
@@ -141,6 +148,21 @@ h2 {
 
 #article-list i.bi-chevron-down {
     transform: rotate(90deg);
+}
+
+#article-list .item-header {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+#article-list .item-header i {
+    padding: 0.5rem;
+    cursor: pointer;
+}
+
+#article-list .item-header a {
+    flex: 1;
 }
 
 #article-list li a:hover {
