@@ -351,36 +351,7 @@ spec:
         </div>
     </div>
 
-        <section id="introduction">
-            <h2>Introduction to Geofencing</h2>
-            <p>Geofencing is a location-based service that triggers actions when a device enters or exits a predefined geographical boundary. At an enterprise scale, geofencing can be used for:</p>
-            <ul>
-                <li>Asset tracking and management</li>
-                <li>Fleet management and logistics</li>
-                <li>Security and access control</li>
-                <li>Location-based marketing</li>
-                <li>Compliance and regulatory requirements</li>
-            </ul>
 
-            <h3>Key Concepts</h3>
-            <ul>
-                <li><strong>Geofence:</strong> A virtual perimeter around a geographical area</li>
-                <li><strong>Shapes:</strong> Circles, polygons, or rectangles defining the boundary</li>
-                <li><strong>Events:</strong> Enter, exit, or dwell triggers</li>
-                <li><strong>Devices:</strong> Mobile devices, vehicles, or assets being tracked</li>
-                <li><strong>Accuracy:</strong> GPS precision and update frequency considerations</li>
-            </ul>
-
-            <h3>Enterprise Requirements</h3>
-            <ul>
-                <li><strong>Scalability:</strong> Handle millions of devices and thousands of geofences</li>
-                <li><strong>Reliability:</strong> High availability and fault tolerance</li>
-                <li><strong>Performance:</strong> Real-time event processing and low latency</li>
-                <li><strong>Security:</strong> Data encryption and access control</li>
-                <li><strong>Compliance:</strong> Data privacy and regulatory requirements</li>
-                <li><strong>Integration:</strong> APIs and webhook support</li>
-            </ul>
-        </section>
 
         <section id="architecture">
             <h2>Enterprise Architecture Components</h2>
@@ -1042,6 +1013,7 @@ const config = {
     <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/reveal.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
     <script>
+        // Initialize Reveal.js
         Reveal.initialize({
             hash: true,
             slideNumber: true,
@@ -1049,11 +1021,22 @@ const config = {
             controls: true,
             progress: true,
             center: false,
-            plugins: [
-                RevealHighlight
-            ]
+            plugins: []  // Remove RevealHighlight as it's not needed with highlight.js
         });
-        hljs.highlightAll();
+
+        // Initialize highlight.js
+        document.addEventListener('DOMContentLoaded', (event) => {
+            document.querySelectorAll('pre code').forEach((block) => {
+                hljs.highlightBlock(block);
+            });
+        });
+
+        // Re-run highlighting after each slide change
+        Reveal.addEventListener('slidechanged', function(event) {
+            document.querySelectorAll('pre code').forEach((block) => {
+                hljs.highlightBlock(block);
+            });
+        });
     </script>
 </body>
 </html>
