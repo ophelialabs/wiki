@@ -96,7 +96,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     // Load Tech Stack
-    fetch('Ophelia/stack/stack.html')
+    fetch('Ophelia/stack/index.html')
         .then(res => res.ok ? res.text() : Promise.reject(res))
         .then(data => {
             const header = document.getElementById('techstack-placeholder');
