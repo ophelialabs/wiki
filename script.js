@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     async function fetchArticles() {
         try {
-            const response = await fetch('wiki/articles.json');
+            const response = await fetch('/wiki/articles.json');
             if (!response.ok) {
                 throw new Error(`Failed to fetch articles.json: ${response.status} ${response.statusText}`);
             }
