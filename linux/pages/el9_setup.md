@@ -2,6 +2,10 @@
 
 ## Important Directories
 - `/`, `/home`, `/tmp`, `/var`, `/var/tmp`, `/var/log`, `/var/log/audit`, `/boot`
+- Import Policies
+- [docs](https://techdocs.broadcom.com/us/en/vmware-cis/vcf/stig/9-0/vcf-stig-documentation/docs-tutorials-cloud-foundation-9x-product-vcf-application-audit9-app-audit9-app.html)
+-[SAF CLI](https://github.com/mitre/saf/releases)
+- /usr/share/stigs
 - Always shred or clean drives and motherboards upon disposal to prevent credential harvesting.
 - ###### Using Yum repository for backwards compatability ######
 
