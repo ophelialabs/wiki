@@ -6,6 +6,10 @@
 - [docs](https://techdocs.broadcom.com/us/en/vmware-cis/vcf/stig/9-0/vcf-stig-documentation/docs-tutorials-cloud-foundation-9x-product-vcf-application-audit9-app-audit9-app.html)
 -[SAF CLI](https://github.com/mitre/saf/releases)
 - /usr/share/stigs
+- [API METRICS](https://www.brockpeterson.com/post/pulling-vsphere-world-metrics-from-vcf-operations)
+- [DX Netops](https://techdocs.broadcom.com/us/en/ca-enterprise-software/it-operations-management/dx-netops/24-3.html)
+- [DX Spectrum](https://techdocs.broadcom.com/us/en/ca-enterprise-software/it-operations-management/spectrum/22-2.html)
+- [OneClick](https://techdocs.broadcom.com/us/en/ca-enterprise-software/it-operations-management/spectrum/25-4/getting-started/client-applications-overview/oneclick-console.html)
 - Always shred or clean drives and motherboards upon disposal to prevent credential harvesting.
 - ###### Using Yum repository for backwards compatability ######
 
