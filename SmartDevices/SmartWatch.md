@@ -1,0 +1,11 @@
+- [FreeCAD](https://www.freecad.org/)
+- [KiCAD Free PCB Design](https://www.kicad.org/)
+- [Voltara PCB](https://www.voltera.io/products/printing-service)
+- [Antenna's and Frequency Ranges](https://www.emscience.org/article/doi/10.23919/emsci.2023.0052)
+- [PineTime](https://github.com/InfiniTimeOrg/InfiniTime)
+- [PebbleOS](https://github.com/google/pebble)
+- [Gadgetbridge](https://gadgetbridge.org/)
+- [3D printing of polymer composites: Materials, processes, and applications](https://www.sciencedirect.com/science/article/pii/S2590238521005178)
+- [Fiber-based Sensor](https://www.nature.com/articles/s41528-025-00465-w)
+- Proprietary BLE
+- Build companion app
