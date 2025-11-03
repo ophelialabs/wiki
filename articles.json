@@ -5,23 +5,23 @@
     },
     {
         "title": "Getting Started",
-        "path": "docs/general/getting-started.md"
+        "path": "docs/enterprise/general/getting-started.md"
     },
     {
         "title": "Style Guide",
-        "path": "docs/development/style-guide.md"
+        "path": "docs/enterprise/development/style-guide.md"
     },
     {
         "title": "Further Reading",
-        "path": "Globe/Nasa/pages/furtherreading.html"
+        "path": "enterprise/Globe/Nasa/pages/furtherreading.html"
     },
     {
         "title": "Architecture Overview",
-        "path": "docs/architecture/arch.md"
+        "path": "docs/enterprise/architecture/arch.md"
     },
     {
         "title": "Development",
-        "path": "docs/development/dev.md"
+        "path": "docs/enterprise/development/dev.md"
     },
     {
         "title": "Enterprise Linux",
@@ -32,11 +32,11 @@
         "children": [
             {
                 "title": "Google Cloud Professional Cloud Architect",
-                "path": "docs/general/Exams/Pages/GCPPCA.md"
+                "path": "docs/enterprise/general/Exams/Pages/GCPPCA.md"
             },
             {
                 "title": "Red Hat Certified System Administrator",
-                "path": "docs/general/Exams/Pages/RHCSA.md"
+                "path": "docs/enterprise/general/Exams/Pages/RHCSA.md"
             },
             {
                 "title": "Grainger College of Engineering | Illinois",
@@ -51,42 +51,42 @@
                 "path": "docs/edu/Uni_Cal_SB/outline.md"
             },
             {
+                "title": "NC State",
+                "path": "docs/edu/NCState/outline.md"
+            },
+            {
                 "title": "Berkely",
-                "path": "docs/edu/Berkely/outline.md"
+                "path": "docs/enterprise/edu/Berkely/outline.md"
             }
         ]
     },
     {
         "title": "DevOps",
-        "path": "docs/cloud-and-devops/devops.md"
+        "path": "docs/enterprise/cloud-and-devops/devops.md"
     },
     {
         "title": "Geofence",
-        "path": "docs/geo/index.html"
+        "path": "docs/enterprise/geo/index.html"
     },
     {
         "title": "SEO",
-        "path": "docs/seo/index.html"
+        "path": "docs/enterprise/seo/index.html"
     },
     {
         "title": "IOT",
-        "path": "docs/iot/messageprotocols.html"
+        "path": "docs/enterprise/iot/messageprotocols.html"
     },
     {
         "title": "Big Data",
-        "path": "docs/bigdata/datalakehouse.html"
+        "path": "docs/enterprise/bigdata/datalakehouse.html"
     },
     {
         "title": "Security",
-        "path": "docs/security/security.md"
-    },
-    {
-        "title": "Edu",
-        "path": "docs/edu/README.md"
+        "path": "docs/enterprise/security/security.md"
     },
     {
         "title": "Globe",
-        "path": "Globe/README.md"
+        "path": "enterprise/Globe/README.md"
     },
     {
         "title": "Ophelia",
