@@ -1,0 +1,4 @@
+- https://pubs.rsc.org/en/content/articlelanding/2025/mh/d4mh01854k
+- https://www.nature.com/articles/s41528-025-00465-w#Sec10
+- https://advanced.onlinelibrary.wiley.com/journal/15214095
+- https://advanced.onlinelibrary.wiley.com/doi/10.1002/adma.201500072
