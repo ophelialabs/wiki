@@ -28,7 +28,7 @@
         "path": "linux/pages/el9_setup.html"
     },
     {
-        "title": "Exams",
+        "title": "Edu",
         "children": [
             {
                 "title": "Google Cloud Professional Cloud Architect",
@@ -37,6 +37,22 @@
             {
                 "title": "Red Hat Certified System Administrator",
                 "path": "docs/general/Exams/Pages/RHCSA.md"
+            },
+            {
+                "title": "Grainger College of Engineering | Illinois",
+                "path": "docs/edu/GCoE_Ill/outline.md"
+            },
+            {
+                "title": "University of Tennessee | Chattanooga",
+                "path": "docs/edu/Uni_Tenn_Chatt/outline.md"
+            },
+            {
+                "title": "University of California | Santa Barbara",
+                "path": "docs/edu/Uni_Cal_SB/outline.md"
+            },
+            {
+                "title": "Berkely",
+                "path": "docs/edu/Berkely/outline.md"
             }
         ]
     },
@@ -63,6 +79,10 @@
     {
         "title": "Security",
         "path": "docs/security/security.md"
+    },
+    {
+        "title": "Edu",
+        "path": "docs/edu/README.md"
     },
     {
         "title": "Globe",
