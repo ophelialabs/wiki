@@ -1,11 +1,11 @@
-https://webappprd.acs.ncsu.edu/php/coursecat/directory.php
-https://physics.sciences.ncsu.edu/
-https://ne.ncsu.edu/
-https://mae.ncsu.edu/
-https://engr.ncsu.edu/
-https://cnr.ncsu.edu/geospatial/
-https://textiles.ncsu.edu/
-https://chemistry.sciences.ncsu.edu//
-https://bme.unc.edu/
-https://math.sciences.ncsu.edu/
-https://biotech.ncsu.edu/
+- https://webappprd.acs.ncsu.edu/php/coursecat/directory.php
+- https://physics.sciences.ncsu.edu/
+- https://ne.ncsu.edu/
+- https://mae.ncsu.edu/
+- https://engr.ncsu.edu/
+- https://cnr.ncsu.edu/geospatial/
+- https://textiles.ncsu.edu/
+- https://chemistry.sciences.ncsu.edu//
+- https://bme.unc.edu/
+- https://math.sciences.ncsu.edu/
+- https://biotech.ncsu.edu/
