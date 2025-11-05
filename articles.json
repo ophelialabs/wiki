@@ -64,6 +64,10 @@
         "title": "Med",
         "children": [
             {
+                "title": "Lab Devices",
+                "path": "docs/LabDevices/README.md"
+            },
+            {
                 "title": "Smart Watch",
                 "path": "docs/SmartDevices/SmartWatch.md"
             },
