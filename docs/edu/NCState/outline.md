@@ -1,11 +1,11 @@
-- https://webappprd.acs.ncsu.edu/php/coursecat/directory.php
-- https://physics.sciences.ncsu.edu/
-- https://ne.ncsu.edu/
-- https://mae.ncsu.edu/
-- https://engr.ncsu.edu/
-- https://cnr.ncsu.edu/geospatial/
-- https://textiles.ncsu.edu/
-- https://chemistry.sciences.ncsu.edu//
-- https://bme.unc.edu/
-- https://math.sciences.ncsu.edu/
-- https://biotech.ncsu.edu/
+- [Course Catalog](https://webappprd.acs.ncsu.edu/php/coursecat/directory.php)
+- [Department of Physics](https://physics.sciences.ncsu.edu/)
+- [Department of Nuclear Engineering](https://ne.ncsu.edu/)
+- [Mechanical and Aerospace Engineeering](https://mae.ncsu.edu/)
+- [College of Engineering](https://engr.ncsu.edu/)
+- [Center for Geospatial Analytics](https://cnr.ncsu.edu/geospatial/)
+- [Wilson College of Textiles](https://textiles.ncsu.edu/)
+- [Department of Chemistry](https://chemistry.sciences.ncsu.edu//)
+- [Lampe Joint BioMedicalEngineering](https://bme.unc.edu/)
+- [Department of Mathematics](https://math.sciences.ncsu.edu/)
+- [Biotechnology Program (BIT)](https://biotech.ncsu.edu/)
