@@ -8,20 +8,8 @@
         "path": "docs/enterprise/general/getting-started.md"
     },
     {
-        "title": "Style Guide",
-        "path": "docs/enterprise/development/style-guide.md"
-    },
-    {
         "title": "Further Reading",
         "path": "Globe/Nasa/pages/furtherreading.html"
-    },
-    {
-        "title": "Architecture Overview",
-        "path": "docs/enterprise/architecture/arch.md"
-    },
-    {
-        "title": "Development",
-        "path": "docs/enterprise/development/dev.md"
     },
     {
         "title": "Enterprise Linux",
@@ -80,11 +68,6 @@
                 "path": "docs/SmartDevices/Neural.md"
             }
         ]
-    },
-            
-    {
-        "title": "DevOps",
-        "path": "docs/enterprise/cloud-and-devops/devops.md"
     },
     {
         "title": "Geofence",
