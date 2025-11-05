@@ -61,6 +61,24 @@
         ]
     },
     {
+        "title": "Med",
+        "children": [
+            {
+                "title": "Smart Watch",
+                "path": "docs/SmartDevices/SmartWatch.md"
+            },
+            {
+                "title": "Smart Glasses",
+                "path": "docs/SmartDevices/SmartWatch.md"
+            },
+            {
+                "title": "Neural",
+                "path": "docs/SmartDevices/Neural.md"
+            }
+        ]
+    },
+            
+    {
         "title": "DevOps",
         "path": "docs/enterprise/cloud-and-devops/devops.md"
     },
