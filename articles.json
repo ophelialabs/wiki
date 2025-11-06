@@ -13,7 +13,7 @@
     },
     {
         "title": "Linux",
-        "path": "linux/pages/el9_setup.html",
+        "path": "linux/pages/el9_setup.md",
             "children": [
                 {
                     "title": "Enterprise Linux 9",
@@ -21,7 +21,7 @@
                 },
                 {
                     "title": "Setup",
-                    "path": "linux/pages/el9_setup.md"
+                    "path": "linux/index.html"
                 }
             ]
     },
