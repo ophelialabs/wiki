@@ -68,22 +68,18 @@
         "title": "Aero",
         "children": [
             {
-                "title": "Nasa",
-                "children": [
-                    {
-                        "title": "Globe",
-                        "path": "Globe/README.md"
-                    },
-                    {
-                        "title": "Further Reading",
-                        "path": "Globe/Nasa/pages/furtherreading.html"
-                    }
-                ],
-
-                "title": "Sat",
-                "path": "jlabclouds/IsaacSim.md"
+                "title": "Globe",
+                "path": "Globe/README.md"
+            },
+            {
+                "title": "Data",
+                "path": "Globe/Nasa/pages/index.md"
+            },
+            {
+                "title": "Further Reading",
+                "path": "Globe/Nasa/pages/furtherreading.html"
             }
-        ]
+        ]       
     },
     {
         "title": "Med",
@@ -123,10 +119,6 @@
     {
         "title": "Security",
         "path": "docs/enterprise/security/security.md"
-    },
-    {
-        "title": "Globe",
-        "path": "Globe/Nasa/pages/index.md"
     },
     {
         "title": "Ophelia",
