@@ -13,7 +13,17 @@
     },
     {
         "title": "Enterprise Linux",
-        "path": "linux/pages/el9_setup.html"
+        "path": "linux/pages/el9_setup.html",
+            "children": [
+                {
+                    "title": "Enterprise Linux 9",
+                    "path": "linux/index.html"
+                },
+                {
+                    "title": "Setup",
+                    "path": "linux/pages/el9_setup.md"
+                }
+            ]
     },
     {
         "title": "Edu",
