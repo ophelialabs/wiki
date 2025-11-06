@@ -1,11 +1,13 @@
 [
     {
         "title": "Welcome to the Wiki",
-        "path": "docs/home.md"
-    },
-    {
-        "title": "Getting Started",
-        "path": "docs/enterprise/general/getting-started.md"
+        "path": "docs/home.md",
+            "children": [
+                {
+                    "title": "Getting Started",
+                    "path": "docs/enterprise/general/getting-started.md"
+                }
+            ]
     },
     {
         "title": "Further Reading",
@@ -22,6 +24,10 @@
                 {
                     "title": "Setup",
                     "path": "linux/pages/el9_setup.sh"
+                },
+                {
+                    "title": "VCF Ops",
+                    "path": "linux/pages/vcf/vcfoperations.md"
                 }
             ]
     },
@@ -89,10 +95,12 @@
     },
     {
         "title": "Ophelia",
-        "path": "Ophelia/stack/index.html"
-    },
-    {
-        "title": "App Pipeline",
-        "path": "Ophelia/pipeline/index.html"
+        "path": "Ophelia/stack/index.html",
+            "children": [
+                {
+                "title": "App PipeLine",
+                "path": "Ophelia/pipeline/index.html"
+                }
+            ]
     }
 ]
