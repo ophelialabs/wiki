@@ -70,39 +70,6 @@
         ]
     },
     {
-        "title": "Research",
-        "children": [
-            {
-                "title": "1",
-                "path": "img/science.adl1988_sm.pdf"
-            },
-            {
-                "title": "2",
-                "path": "img/science.adn0623_sm.pdf"
-            },
-            {
-                "title": "3",
-                "path": "img/science.adw8151_sm.pdf"
-            }
-        ]
-    },
-    {
-        "title": "Geofence",
-        "path": "docs/enterprise/geo/index.html"
-    },
-    {
-        "title": "SEO",
-        "path": "docs/enterprise/seo/index.html"
-    },
-    {
-        "title": "IOT",
-        "path": "docs/enterprise/iot/messageprotocols.html"
-    },
-    {
-        "title": "Big Data",
-        "path": "docs/enterprise/bigdata/datalakehouse.html"
-    },
-    {
         "title": "Security",
         "path": "docs/enterprise/security/security.md"
     },
