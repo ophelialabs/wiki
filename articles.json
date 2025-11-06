@@ -86,6 +86,20 @@
         ]
     },
     {
+        "title": "Platform",
+        "path": "docs/enterprise/platform/index.html",
+            "children": [
+                {
+                    "title": "Pages",
+                    "path": "docs/enterprise/platform/pages/pages.html"
+                },
+                {
+                    "title": "Automate",
+                    "path": "docs/enterprise/platform/automate/automate.html"
+                }
+            ]
+    },
+    {
         "title": "Security",
         "path": "docs/enterprise/security/security.md"
     },
