@@ -88,8 +88,12 @@
                 "path": "Globe/Nasa/pages/furtherreading.html"
             },
             {
-                "title": "Sat",
+                "title": "Isaac Sim",
                 "path": "jlabclouds/IsaacSim.md"
+            },
+            {
+                "title": "Sat",
+                "path": "Globe/Nasa/index.html"
             }
         ]       
     },
