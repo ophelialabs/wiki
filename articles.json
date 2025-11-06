@@ -76,6 +76,14 @@
                 "path": "Globe/Nasa/pages/index.md"
             },
             {
+                "title": "HDF5",
+                "path": "../temp/Globe/Data/hpf5.md"
+            },
+            {
+                "title": "Physics",
+                "path": "../Physics/README.md"
+            },
+            {
                 "title": "Further Reading",
                 "path": "Globe/Nasa/pages/furtherreading.html"
             },
