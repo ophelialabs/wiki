@@ -3,7 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Apache Parquet</title>
+    <title>Big Data</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/reveal.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/theme/moon.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/monokai.min.css">
     <style>
         body {
             font-family: sans-serif;
@@ -27,19 +30,65 @@
         th {
             background-color: #f2f2f2;
         }
+        .reveal pre {
+            box-shadow: none;
+            margin: 15px 0;
+        }
+        .reveal pre code {
+            max-height: 400px;
+            padding: 10px;
+            font-size: 0.8em;
+        }
+        .reveal section {
+            height: 100%;
+        }
+        .reveal h1 {
+            font-size: 2.5em;
+        }
+        .reveal h2 {
+            font-size: 1.8em;
+        }
+        .reveal h3 {
+            font-size: 1.4em;
+        }
+        .reveal ul {
+            font-size: 0.9em;
+        }
+        .reveal .slides {
+            text-align: left;
+        }
+        .reveal .slide-number {
+            font-size: 0.5em;
+        }
+        .two-columns {
+            display: flex;
+            justify-content: space-between;
+        }
+        .column {
+            flex: 0 0 48%;
+        }
     </style>
 </head>
 <body>
+    <div class="reveal">
+        <div class="slides">
+            <!-- Title Slide -->
+            <section>
+                <a href="https://azure.microsoft.com/en-us/products/data-lake-analytics/" target="_blank" rel="noopenner noreferrer">Data Lake Analytics</a>
+                <a href="https://www.ibm.com/think/topics/apache-iceberg" target="_blank" rel="noopenner noreferrer">Apache Iceberg</a>
+                <a href="https://www.ibm.com/think/topics/big-data-analytics" target="_blank" rel="noopenner noreferrer">IBM Big Data Analytics</a>
+            </section>
 
-    <a href="https://azure.microsoft.com/en-us/products/data-lake-analytics/" target="_blank" rel="noopenner noreferrer">Data Lake Analytics</a>
-<a href="https://www.ibm.com/think/topics/apache-iceberg" target="_blank" rel="noopenner noreferrer">Apache Iceberg</a>
-<a href="https://www.ibm.com/think/topics/big-data-analytics" target="_blank" rel="noopenner noreferrer">IBM Big Data Analytics</a>
+            <!-- Introduction -->
+            <section>
+                <section>
+                    <h1>Introduction to Big Data</h1>
+                        <h2>Apache Parquet</h2>
+                            <p>Apache Parquet is an open-source, columnar file format that is highly optimized for storing and processing large datasets in analytical systems. Unlike traditional row-based formats such as CSV, Parquet organizes data by columns, which offers significant advantages for big data applications.</p>
+                </section>
 
-
-    <h1>Apache Parquet</h1>
-    <p>Apache Parquet is an open-source, columnar file format that is highly optimized for storing and processing large datasets in analytical systems. Unlike traditional row-based formats such as CSV, Parquet organizes data by columns, which offers significant advantages for big data applications.</p>
-
-    <h2>Key features and benefits</h2>
+                <section>
+                     <h2>Key features and benefits</h2>
     <ul>
         <li><strong>Columnar storage:</strong> Data is stored vertically by column rather than horizontally by row. This is ideal for analytical queries that often only need to access a small subset of columns from a large table. The system can efficiently read only the required columns, minimizing I/O and increasing performance.</li>
         <li><strong>Efficient compression:</strong> By grouping similar data types together in columns, Parquet achieves higher and more efficient data compression. This reduces storage space and costs, as well as the amount of data that needs to be transferred over a network. Parquet supports multiple compression algorithms, such as Snappy, Gzip, and Zstandard.</li>
@@ -59,7 +108,9 @@
             </ul>
         </li>
     </ul>
+                </section>
 
+                <section>
     <h2>How Parquet differs from CSV</h2>
     <table>
         <thead>
@@ -102,13 +153,46 @@
             </tr>
         </tbody>
     </table>
+            </section>
 
-    <h2>Common use cases</h2>
+            <section>
+                    <h2>Common use cases</h2>
     <ul>
         <li><strong>Data lakes:</strong> Parquet is the de facto standard for storing data in modern data lake and lakehouse architectures, providing a high-performance, cost-effective storage layer.</li>
         <li><strong>Analytical workloads:</strong> It is the ideal format for Online Analytical Processing (OLAP) systems and business intelligence workloads that involve running complex, ad hoc queries on large datasets.</li>
         <li><strong>Batch processing:</strong> Parquet is widely used in batch processing jobs with frameworks like Apache Spark and Hadoop, where data is ingested, processed, and then stored.</li>
     </ul>
+            </section>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/reveal.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
+    <script>
+        // Initialize Reveal.js
+        Reveal.initialize({
+            hash: true,
+            slideNumber: true,
+            transition: 'slide',
+            controls: true,
+            progress: true,
+            center: false,
+            plugins: []  // Remove RevealHighlight as it's not needed with highlight.js
+        });
+
+        // Initialize highlight.js
+        document.addEventListener('DOMContentLoaded', (event) => {
+            document.querySelectorAll('pre code').forEach((block) => {
+                hljs.highlightBlock(block);
+            });
+        });
+
+        // Re-run highlighting after each slide change
+        Reveal.addEventListener('slidechanged', function(event) {
+            document.querySelectorAll('pre code').forEach((block) => {
+                hljs.highlightBlock(block);
+            });
+        });
+    </script>
 
 </body>
 </html>
