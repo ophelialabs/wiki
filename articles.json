@@ -78,7 +78,10 @@
                         "title": "Further Reading",
                         "path": "Globe/Nasa/pages/furtherreading.html"
                     }
-                ]
+                ],
+
+                "title": "Sat",
+                "path": "jlabclouds/IsaacSim.md"
             }
         ]
     },
