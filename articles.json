@@ -21,7 +21,7 @@
                 },
                 {
                     "title": "Setup",
-                    "path": "linux/index.html"
+                    "path": "linux/pages/el9_setup.sh"
                 }
             ]
     },
