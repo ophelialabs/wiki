@@ -10,13 +10,12 @@
             ]
     },
     {
-        "title": "Further Reading",
-        "path": "Globe/Nasa/pages/furtherreading.html"
-    },
-    {
         "title": "Linux",
-        "path": "linux/pages/el9_setup.md",
             "children": [
+                {
+                    "title": "Index",
+                    "path": "linux/pages/el9_setup.md"
+                },
                 {
                     "title": "Enterprise Linux 9",
                     "path": "linux/index.html"
@@ -33,8 +32,11 @@
     },
     {
         "title": "Departments",
-        "path": "docs/Departments/index.html",
         "children": [
+            {
+                "title": "Index",
+                "path": "docs/Departments/index.html"
+            },
             {
                 "title": "Mathematics",
                 "path": "docs/Departments/Mathematics/index.html"
@@ -97,10 +99,6 @@
                 "path": "../Physics/README.md"
             },
             {
-                "title": "Further Reading",
-                "path": "Globe/Nasa/pages/furtherreading.html"
-            },
-            {
                 "title": "Isaac Sim",
                 "path": "jlabclouds/IsaacSim.md"
             },
@@ -133,8 +131,11 @@
     },
     {
         "title": "Platform",
-        "path": "docs/enterprise/platform/index.html",
             "children": [
+                {
+                    "title": "Index",
+                    "path": "docs/enterprise/platform/index.html"
+                },
                 {
                     "title": "Pages",
                     "path": "docs/enterprise/platform/pages/pages.html"
@@ -146,17 +147,24 @@
             ]
     },
     {
-        "title": "Security",
-        "path": "docs/enterprise/security/security.md"
-    },
-    {
         "title": "Ophelia",
-        "path": "Ophelia/stack/index.html",
             "children": [
                 {
-                "title": "App PipeLine",
-                "path": "Ophelia/pipeline/index.html"
+                    "title": "Stack",
+                    "path": "Ophelia/stack/index.html"
+                },
+                {
+                    "title": "App PipeLine",
+                    "path": "Ophelia/pipeline/index.html"
+                },
+                {
+                    "title": "Security",
+                    "path": "docs/enterprise/security/security.md"
                 }
             ]
+    },
+    {
+        "title": "Further Reading",
+        "path": "Globe/Nasa/pages/furtherreading.html"
     }
 ]
