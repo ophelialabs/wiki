@@ -23,7 +23,7 @@
                 },
                 {
                     "title": "Setup",
-                    "path": "linux/pages/el9_setup.sh"
+                    "path": "linux/pages/el9_setup.html"
                 },
                 {
                     "title": "VCF Ops",
