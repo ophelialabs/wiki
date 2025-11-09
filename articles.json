@@ -33,6 +33,7 @@
     },
     {
         "title": "Departments",
+        "path": "docs/Departments/index.html",
         "children": [
             {
                 "title": "Mathematics",
