@@ -1,7 +1,7 @@
 [
     {
         "title": "Welcome to the Wiki",
-        "path": "docs/home.md",
+        "path": "docs/welcome.md",
             "children": [
                 {
                     "title": "Getting Started",
