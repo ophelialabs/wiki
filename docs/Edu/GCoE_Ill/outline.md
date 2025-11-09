@@ -19,7 +19,10 @@
 - [ECE 120 | Intro to Computing](https://canvas.illinois.edu/courses/60852)
 - [ECE 220 | Computer Systems & Programming](https://canvas.illinois.edu/courses/60852)
 - [ECE 210/211 | Analog Signal Processing, Circuits & Systems](https://courses.grainger.illinois.edu/ECE210/fa2025/index.html) 
+
 - [ECE 350 | Fields & Waves II](https://courses.grainger.illinois.edu/ece350/)
+- [ECE 350 Lecture Notes](https://courses.grainger.illinois.edu/ece350/ece350lecture_notes_ver2024.pdf)
+
 - [ECE 398 | Fields & Waves Labs](https://www.ilie.ece.illinois.edu/ece-398-ri)
 - [Quantum Information Theory](https://courses.grainger.illinois.edu/ECE404/fa2025/)
 - [ECE 415 | Biomedical Instrumentation](https://publish.illinois.edu/bioe415-al1/)

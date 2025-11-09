@@ -32,7 +32,7 @@
             ]
     },
     {
-        "title": "Edu",
+        "title": "Departments",
         "children": [
             {
                 "title": "Google Cloud Professional Cloud Architect",
@@ -44,23 +44,23 @@
             },
             {
                 "title": "Grainger College of Engineering | Illinois",
-                "path": "docs/edu/GCoE_Ill/outline.md"
+                "path": "docs/Departments/GCoE_Ill/outline.md"
             },
             {
                 "title": "University of Tennessee | Chattanooga",
-                "path": "docs/edu/Uni_Tenn_Chatt/outline.md"
+                "path": "docs/Departments/Uni_Tenn_Chatt/outline.md"
             },
             {
                 "title": "University of California | Santa Barbara",
-                "path": "docs/edu/Uni_Cal_SB/outline.md"
+                "path": "docs/Departments/Uni_Cal_SB/outline.md"
             },
             {
                 "title": "NC State",
-                "path": "docs/edu/NCState/outline.md"
+                "path": "docs/Departments/NCState/outline.md"
             },
             {
                 "title": "Berkely",
-                "path": "docs/edu/Berkeley/outline.md"
+                "path": "docs/Departments/Berkeley/outline.md"
             }
         ]
     },
