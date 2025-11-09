@@ -35,32 +35,44 @@
         "title": "Departments",
         "children": [
             {
-                "title": "Google Cloud Professional Cloud Architect",
-                "path": "docs/enterprise/general/Exams/Pages/GCPPCA.md"
+                "title": "Mathematics",
+                "path": "docs/Departments/Mathematics/index.html"
             },
             {
-                "title": "Red Hat Certified System Administrator",
-                "path": "docs/enterprise/general/Exams/Pages/RHCSA.md"
+                "title": "Chemistry",
+                "path": "docs/Departments/Chemistry/index.html"
             },
             {
-                "title": "Grainger College of Engineering | Illinois",
-                "path": "docs/Departments/GCoE_Ill/outline.md"
+                "title": "Engineering",
+                "path": "docs/Departments/Engineering/index.html"
             },
             {
-                "title": "University of Tennessee | Chattanooga",
-                "path": "docs/Departments/Uni_Tenn_Chatt/outline.md"
+                "title": "Geospatial Analytics",
+                "path": "docs/Departments/Geospatial_Analytics/index.html"
             },
             {
-                "title": "University of California | Santa Barbara",
-                "path": "docs/Departments/Uni_Cal_SB/outline.md"
+                "title": "Textiles",
+                "path": "docs/Departments/Textiles/index.html"
             },
             {
-                "title": "NC State",
-                "path": "docs/Departments/NCState/outline.md"
+                "title": "Physics",
+                "path": "docs/Departments/Physics/README.md"
             },
             {
-                "title": "Berkely",
-                "path": "docs/Departments/Berkeley/outline.md"
+                "title": "Nuclear Engineering",
+                "path": "docs/Departments/Nuclear_Engineering/index.html"
+            },
+            {
+                "title": "Aerospace Engineering",
+                "path": "docs/Departments/Aerospace_Engineering/index.html"
+            },
+            {
+                "title": "BioMedical Engineering",
+                "path": "docs/Departments/BioMedical_Engineering/index.html"
+            },
+            {
+                "title": "BioTechnology Program",
+                "path": "docs/Departments/BioTechnology/index.html"
             }
         ]
     },
