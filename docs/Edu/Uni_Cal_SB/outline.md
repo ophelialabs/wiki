@@ -1,1 +1,0 @@
-[University of California | Santa Barbara](https://catalog.ucsb.edu/courses?departments=PHYS&page=1&cq=)

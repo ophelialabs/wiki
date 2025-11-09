@@ -1,1 +1,0 @@
-[University of Tennessee | Chattanooga](https://catalog.utc.edu/content.php?catoid=50&navoid=1992)

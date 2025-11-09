@@ -1,3 +1,0 @@
-- [Berkely](https://undergraduate.catalog.berkeley.edu/programs?page=1&pq=)
-- [STAC | Berkely](https://stac.studentorg.berkeley.edu/)
-- [Time | Berkely](https://stac.studentorg.berkeley.edu/project/time1)
