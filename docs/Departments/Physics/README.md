@@ -1,4 +1,9 @@
+[QDK](https://github.com/microsoft/qdk)
+[Microsoft Ignite](https://learn.microsoft.com/en-us/training/paths/quantum-computing-fundamentals/)
 [Quantum tfactories](https://learn.microsoft.com/en-us/azure/quantum/concepts-tfactories)
+[QDK Katas](https://github.com/microsoft/qdk/tree/main/katas)
+[Circuit Diagrams](https://github.com/microsoft/qdk/wiki/Circuit-Diagrams-from-Q%23-Code)
+
 Utilizing a hybrid quantum-classical architecture for physics simulations requires a blend of standard Python scientific libraries and specialized quantum programming frameworks. The specific algorithms and libraries depend heavily on the physics scenario being simulated. 
 Python and Quantum Libraries Needed
 Category 	Python Libraries	Quantum Libraries/SDKs
