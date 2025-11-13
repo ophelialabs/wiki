@@ -1,3 +1,4 @@
+[Quantum tfactories](https://learn.microsoft.com/en-us/azure/quantum/concepts-tfactories
 Utilizing a hybrid quantum-classical architecture for physics simulations requires a blend of standard Python scientific libraries and specialized quantum programming frameworks. The specific algorithms and libraries depend heavily on the physics scenario being simulated. 
 Python and Quantum Libraries Needed
 Category 	Python Libraries	Quantum Libraries/SDKs
