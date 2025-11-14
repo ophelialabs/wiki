@@ -31,6 +31,10 @@
             ]
     },
     {
+        "title": "Universities",
+        "path": "uni/index.html"
+    },
+    {
         "title": "Departments",
         "children": [
             {
