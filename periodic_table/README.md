@@ -15,7 +15,7 @@ The script (e.g., the AgentManager or ModelGenerator) calls the QuantumProcessor
 When the task completes, the results (e.g., an array of probabilities or spatial data) are used to dynamically update the 3D scene (e.g., positioning electron spheres, changing material properties, or generating a data visualization plot).
 
 
-## Integrate Q# in an R&D context, with the goal of supporting front-end actions like 3D rendering.
+### Integrate Q# in an R&D context, with the goal of supporting front-end actions like 3D rendering.
 
 1. Reference the Q# project from the host project. 
 
