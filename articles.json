@@ -35,6 +35,10 @@
         "path": "uni/index.html"
     },
     {
+        "title": "Research",
+        "path": "rss/index.html"
+    },
+    {
         "title": "Departments",
         "children": [
             {
