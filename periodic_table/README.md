@@ -1,4 +1,4 @@
-### Create an interactive periodic table of elements integrated with a research agent that generates 3D visuals 
+##### Create an interactive periodic table of elements integrated with a research agent that generates 3D visuals 
 
 1. Element Data Structure
 Create a class to hold the element data.
