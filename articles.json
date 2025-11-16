@@ -39,6 +39,10 @@
         "path": "rss/iframe.html"
     },
     {
+        "title": "Elements",
+        "path": "../Periodic_Table/README.md
+    },
+    {
         "title": "Departments",
         "children": [
             {
