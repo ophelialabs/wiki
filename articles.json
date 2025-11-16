@@ -32,11 +32,11 @@
     },
     {
         "title": "Universities",
-        "path": "uni/index.html"
+        "path": "uni/iframe.html"
     },
     {
         "title": "Research",
-        "path": "rss/index.html"
+        "path": "rss/iframe.html"
     },
     {
         "title": "Departments",
