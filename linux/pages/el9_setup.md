@@ -1,4 +1,5 @@
 # [RHEL9 Docs](https://docs.oracle.com/en/operating-systems/oracle-linux/9/)
+**OWL/WISE/CENTRALSHARE**
 
 ## Important Directories
 - `/`, `/home`, `/tmp`, `/var`, `/var/tmp`, `/var/log`, `/var/log/audit`, `/boot`
