@@ -4,6 +4,12 @@
 
 This is your company's internal wikipedia. A place to document everything and anything related to our work.
 
+**For Future Reference:** 
+    - Create 2 VMs 
+    - IDE [(2)Code, (2)Insiders, (2)Xcode) 
+    - Seperate by account 
+    - Master
+
 ## Purpose
 
 The purpose of this wiki is to provide a centralized knowledge base for all employees. This includes technical documentation, project information, team structures, and more.
