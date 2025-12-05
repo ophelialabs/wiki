@@ -11,12 +11,6 @@ This is your company's internal wikipedia. A place to document everything and an
   - Seperate by account 
   - Master
 
-**For Future Reference:**
-  - Create 2 VMs 
-  - IDE [(2)Code, (2)Insiders, (2)Xcode)
-  - Seperate by account
-  - Master
-
 **Start with [SpringBoot](https://start.spring.io)**
   - Learn differences between Java, Kotlin, Groovy
 
