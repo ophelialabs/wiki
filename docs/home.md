@@ -1,16 +1,18 @@
 # Welcome to the Internal Wiki
 
 This is your company's internal wikipedia. A place to document everything and anything related to our work.
+
 **For Future Reference:**
     - Create 2 VMs 
     - IDE [(2)Code, (2)Insiders, (2)Xcode)
     - Seperate by account
     - Master
----
+
 **Start with [SpringBoot](https://start.spring.io)**
-    - Learn differences between Java, Kotlin, Groovy
-**Also start with CopilotKit GCP [ADK](https://docs.copilotkit.ai/adk)
-    - need to review documentation
+  - Learn differences between Java, Kotlin, Groovy
+
+**Also start with CopilotKit [GCP](https://console.cloud.google.com/) / [ADK](https://docs.copilotkit.ai/adk)**
+  - need to review documentation
 
 ## Purpose
 
