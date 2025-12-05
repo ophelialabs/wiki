@@ -6,6 +6,10 @@ This is your company's internal wikipedia. A place to document everything and an
     - IDE [(2)Code, (2)Insiders, (2)Xcode)
     - Seperate by account
     - Master
+**Start with [SpringBoot](https://start.spring.io)**
+    - Learn differences between Java, Kotlin, Groovy
+**Also start with CopilotKit GCP [ADK](https://docs.copilotkit.ai/adk)
+    - need to review documentation
 
 ## Purpose
 
