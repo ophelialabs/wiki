@@ -147,11 +147,12 @@ sudo rpm --import https://packages.microsoft.com/keys/microsoft.asc
 echo -e "[code]\nname=Visual Studio Code\nbaseurl=https://packages.microsoft.com/yumrepos/vscode\nenabled=1\nautorefresh=1\ntype=rpm-md\ngpgcheck=1\ngpgkey=https://packages.microsoft.com/keys/microsoft.asc" | sudo tee /etc/yum.repos.d/vscode.repo > /dev/null
 
 # Prompt the user to choose between VS Code and VS Code Insiders
-echo "Choose the version of Visual Studio Code to install:"
+echo "Choose the IDEs to install:"
 echo "1) Visual Studio Code (Stable)"
 echo "2) Visual Studio Code Insiders"
-echo "3) Skip Install"
-read -p "Enter your choice (1/2/3): " choice
+echo "3) Both VS Code and Insiders"
+echo "4) Skip Install"
+read -p "Enter your choice (1/2/3/4): " choice
 case $choice in
   1)
     echo "Installing Visual Studio Code (Stable)..."
@@ -160,6 +161,10 @@ case $choice in
   2)
     echo "Installing Visual Studio Code Insiders..."
     sudo yum install -y code-insiders
+    ;;
+  3)
+    echo "Installing Both..."
+    sudo yum install -y code code-insiders
     ;;
   *)
     echo "Skipping."
