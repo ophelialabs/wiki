@@ -7,7 +7,7 @@ sudo yum update -y && sudo yum upgrade -y
 # Suggest using Vim/Nano/Cat for editing and creating files, or using VS Code with the Remote - SSH extension.
 
 # Tools
-sudo yum install -y NetworkManager-tui nm-connection-editor yum-utils goprofng drgn corelens lynx
+sudo yum install -y NetworkManager-tui nm-connection-editor yum-utils goprofng drgn corelens lynx nodejs java-21-openjdk java-21-openjdk-devel php
 
 # Virtualization 
 # Using the curl cmd approach from the quickstart guide allows you to 
@@ -169,11 +169,11 @@ gcloud init
 # AWS CLI
 
 # Launch Browser Portals
-podman pull docker.io/coretinth/it-tools:latest
-podman run -d -p 8080:80 --name it-tools -it docker.io/corentinth/it-tools
+podman pull docker.io/opendap/hyrax:snapshot
+podman run -d -h hyrax -p 8080:80 --volume ~/tmp/data:/usr/share/hyrax --name=hyrax opendap/hyrax:snapshot
 systemctl enable --now grafana-server.service
 # Ifconfig command to get the IP address and print if using a linux subsystem, SVR/VM w/o GUI, or SSH 
-echo "Browser: localhost:9090 localhost:8080"
+echo "Browser: localhost:9090 localhost:8080/opendap/hyrax"
 
 # Reference other scripts for additional setup
 
