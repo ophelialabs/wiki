@@ -9,10 +9,38 @@ sudo yum update -y && sudo yum upgrade -y
 # Tools
 sudo yum install -y NetworkManager-tui nm-connection-editor yum-utils goprofng drgn corelens lynx
 
+# Node.js
+# https://nodejs.org/en/download/current
+# Download and install nvm:
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.2/install.sh | bash
+# in lieu of restarting the shell
+\. "$HOME/.nvm/nvm.sh"
+# Download and install Node.js:
+nvm install 24
+# Verify the Node.js version:
+node -v # Should print "v22.14.0".
+nvm current # Should print "v22.14.0".
+# Verify npm version:
+npm -v # Should print "10.9.2".
+
+# Java/NPM/PHP
+sudo yum install -y nodejs npm java-21-openjdk java-21-openjdk-devel php
+# sudo alternatives --config java 
+sudo yum module enable -y nodejs:22 && sudo yum update -y
+npm install -g npm@11.3.0 @angular/cli gulp-cli appcenter-cli yo generator-hottowel express mocha corepack axios
+curl -fsSL https://rpm.nodesource.com/setup_23.x -o nodesource_setup.sh 
+sudo bash nodesource_setup.sh 
+# run following command in new bash window
+appcenter login
+
+# Terraform
+sudo yum-config-manager --add-repo https://rpm.releases.hashicorp.com/RHEL/hashicorp.repo
+sudo yum -y install terraform
+
 # Virtualization 
 # Using the curl cmd approach from the quickstart guide allows you to 
 # bypass putting in your password 6x
-sudo yum install -y cockpit-machines qemu-kvm libvirt virt-install virt-viewer
+sudo yum install -y cockpit-machines qemu-kvm libvirt virt-install virt-viewer dotnet-sdk-10.0
 for drv in qemu network nodedev nwfilter secret storage interface; do systemctl start virt${drv}d{,-ro,-admin}.socket; done 
 virt-host-validate
 
@@ -90,9 +118,13 @@ curl -LO "$URL"
 RPM_FILE=$(basename "$URL")
 sudo rpm -Uvh "$RPM_FILE" && rm -f "$RPM_FILE"
 
-# Terraform
-sudo yum-config-manager --add-repo https://rpm.releases.hashicorp.com/RHEL/hashicorp.repo
-sudo yum -y install terraform
+# Podman 
+sudo yum install -y cockpit-podman container-tools podman podman-docker 
+flatpak remote-add --if-not-exists --user flathub https://flathub.org/repo/flathub.flatpakrepo
+flatpak install -y --user flathub io.podman_desktop.PodmanDesktop
+gnome-terminal -- -c flatpak run io.podman_desktop.PodmanDesktop
+xterm -e flatpak run io.podman_desktop.PodmanDesktop || \
+echo "Failed to launch Podman Desktop. Please run 'flatpak run io.podman_desktop.PodmanDesktop' manually."
 
 # Go (Arch dependant linux/amd64 or linux/arm64)
 # Go install can be used to install other versions of Go.
@@ -149,9 +181,46 @@ gnome-terminal -- -c browser run "https://linux.oracle.com/ords/f?p=101:30" + "h
 
 # Oracle Cloud CLI
 sudo yum install -y oracle-cloud-cli
-
-# Azure CLI
-sudo rpm --import https://packages.microsoft.com/keys/microsoft.asc
+# Initialize Oracle Cloud CLI
+oci setup config
+# Install Oracle Cloud CLI plugins
+oci os ns get --auth instance_principal
+# Install OCI CLI plugins
+oci os object bulk-upload --help
+# Install OCI CLI Data Science plugin
+oci ds model list --help
+# Install OCI CLI Database plugin
+oci db autonomous-database list --help
+# Install OCI CLI Resource Manager plugin
+oci resource-manager stack list --help
+# Install OCI CLI Logging plugin
+oci logging log-group list --help
+# Install OCI CLI Monitoring plugin
+oci monitoring metric list --help
+# Install OCI CLI Networking plugin
+oci network vcn list --help
+# Install OCI CLI Identity plugins
+oci iam user list --help
+# Install OCI CLI Block Volume plugin
+oci bv volume list --help
+# Install OCI CLI Object Storage plugin
+oci os bucket list --help
+# Install OCI CLI Functions plugin
+oci fn application list --help
+# Install OCI CLI Events plugin
+oci events rule list --help
+# Install OCI CLI Notifications plugin
+oci ons topic list --help
+# Install OCI CLI Resource Manager plugin
+oci resource-manager stack list --help
+# Install OCI CLI Vault plugin
+oci vault secret list --help
+# Install OCI CLI Data Catalog plugin
+oci data-catalog catalog list --help
+# Install OCI CLI Data Flow plugin
+oci data-flow application list --help
+# Install OCI CLI Data Integration plugin
+oci data-integration workspace list --help
 
 # GCLI
 sudo tee -a /etc/yum.repos.d/google-cloud-sdk.repo << EOM
@@ -166,14 +235,15 @@ EOM
 sudo yum install -y google-cloud-cli
 gcloud init
 
-# AWS CLI
-
 # Launch Browser Portals
 podman pull docker.io/coretinth/it-tools:latest
 podman run -d -p 8080:80 --name it-tools -it docker.io/corentinth/it-tools
 systemctl enable --now grafana-server.service
 # Ifconfig command to get the IP address and print if using a linux subsystem, SVR/VM w/o GUI, or SSH 
 echo "Browser: localhost:9090 localhost:8080"
+
+# Azure CLI
+sudo rpm --import https://packages.microsoft.com/keys/microsoft.asc
 
 # Reference other scripts for additional setup
 
