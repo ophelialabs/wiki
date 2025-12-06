@@ -151,12 +151,28 @@ By implementing these steps, you can create a robust scheduling system that inte
 
 ## Cart & Checkout
 <img src="scalableairoadmap.jpg" style="100px" />
-- **Scope:** Online, brick-and-mortar, Shipt, Google Express; **critical impact on guest experience**
-- **Languages:** [Kotlin](https://kotlinlang.org/), [Groovy](https://groovy-lang.org/), [JAM](https://lets-jam.org/docs/jam/index.html)
-- **Frameworks:** [Micronaut](https://micronaut.io/), [Ratpack](https://ratpack.io/)
-- **Databases:** [Postgres](https://www.postgresql.org/), [Cassandra](https://cassandra.apache.org/)
-- **Events:** [Kafka](https://kafka.apache.org/)
-- **Architecture:** Microservices, multi-tenant
+
+**Scope:** 
+  - Online, brick-and-mortar, Shipt, Google Express; **critical impact on guest experience**
+
+**Languages:** 
+ - [Kotlin](https://kotlinlang.org/)
+ - [Groovy](https://groovy-lang.org/)
+ - [JAM](https://lets-jam.org/docs/jam/index.html)
+
+**Frameworks:** 
+ - [Micronaut](https://micronaut.io/)
+ - [Ratpack](https://ratpack.io/)
+
+**Databases:** 
+ - [Postgres](https://www.postgresql.org/)
+ - [Cassandra](https://cassandra.apache.org/)
+
+**Events:** 
+ - [Kafka](https://kafka.apache.org/)
+
+**Architecture:** Microservices, multi-tenant
+
 - **Deployment Steps:**
     1. **Build Service Module**
     ```bash
