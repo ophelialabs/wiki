@@ -24,7 +24,7 @@ nvm current # Should print "v22.14.0".
 npm -v # Should print "10.9.2".
 
 # Java/NPM/PHP
-sudo yum install -y nodejs npm java-17-openjdk java-17-openjdk-devel php
+sudo yum install -y nodejs npm java-21-openjdk java-21-openjdk-devel php
 # sudo alternatives --config java 
 sudo yum module enable -y nodejs:22 && sudo yum update -y
 npm install -g npm@11.3.0 @angular/cli gulp-cli appcenter-cli yo generator-hottowel express mocha corepack axios
@@ -40,7 +40,7 @@ sudo yum -y install terraform
 # Virtualization 
 # Using the curl cmd approach from the quickstart guide allows you to 
 # bypass putting in your password 6x
-sudo yum install -y cockpit-machines qemu-kvm libvirt virt-install virt-viewer dotnet-sdk-9.0
+sudo yum install -y cockpit-machines qemu-kvm libvirt virt-install virt-viewer dotnet-sdk-10.0
 for drv in qemu network nodedev nwfilter secret storage interface; do systemctl start virt${drv}d{,-ro,-admin}.socket; done 
 virt-host-validate
 
