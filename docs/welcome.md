@@ -213,9 +213,10 @@ fun getCart(): HttpResponse<Cart> = HttpResponse.ok(cartService.fetchCart())
 ### Lead Java Developer
 
 - **Experience:** [Java/J2EE](https://www.oracle.com/java/technologies/appmodel.html), [Kotlin](https://kotlinlang.org/docs/home.html), SQL/NoSQL (RDBMS: [SQL Server](https://www.microsoft.com/en-us/sql-server), [OCI DB](https://www.oracle.com/database/))([Postgres](https://www.postgresql.org/), [MongoDB](https://www.mongodb.com/), [Cassandra](https://cassandra.apache.org/_/index.html), [Graph DB](https://graphdb.ontotext.com/)), Python, Ruby, [Chef](https://www.chef.io/), [Drone](https://drone.io/), [Kubernetes containers](https://kubernetes.io/docs/concepts/containers/), Cloud tech.
-- **Lifecycle:** At least one full-cycle implementation of a major project.
-- DB Browser for SQLite
-- SQL Server
+  
+**Lifecycle:** At least one full-cycle implementation of a major project.
+ - DB Browser for SQLite
+ - SQL Server
 
 ### Lead Engineer
 
@@ -279,7 +280,7 @@ public class Application {
 
 ## CI/CD & DevOps
 
-- **Code Pipelines:** Docker, Drone, [Vela](https://github.com/go-vela/vela)
+- **Code Pipelines:** Docker, Drone, [Vela](https://github.com/go-vela/vela), [JFrog](https://jfrog.com)
 - **DevOps Tools:** Jenkins, Git, Kubernetes
 - **Steps:**
     1. Push code to repo
