@@ -24,6 +24,10 @@ The purpose of this wiki is to provide a centralized knowledge base for all empl
 
 SMART
 Organize and break down into steps
+ - Spring boot/micronaut
+ - React/type
+ - Python/flask
+ - .NET/blazor
 
 ## Contributing
 
