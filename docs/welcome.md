@@ -14,7 +14,7 @@ This is your company's internal wikipedia. A place to document everything and an
 **Start with [SpringBoot](https://start.spring.io)**
   - Learn differences between [Java](https://www.oracle.com/java/technologies/appmodel.html), Kotlin, Groovy
 
-**Also start with CopilotKit [GCP](https://console.cloud.google.com/) / [ADK](https://docs.copilotkit.ai/adk)**
+**Also start with [CopilotKit](https://cloud.copilotkit.ai/sign-in) [GCP](https://console.cloud.google.com/) / [ADK](https://docs.copilotkit.ai/adk)**
   - need to review documentation
 
     
