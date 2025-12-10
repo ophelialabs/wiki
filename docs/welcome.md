@@ -1,34 +1,10 @@
-*Find rss documentation, add journal and research sites for unified feed*
-
 # Welcome to the Internal Wiki
 
 This is your company's internal wikipedia. A place to document everything and anything related to our work.
-
-**For Future Reference:** 
-  - Create 2 VMs 
-  - Shared Directory 
-  - IDE [(2)Code, (2)Insiders, (2)IntelliJ, (2)Eclipse) 
-  - Seperate by account 
-  - Master
-
-**Start with [SpringBoot](https://start.spring.io)**
-  - Learn differences between [Java](https://www.oracle.com/java/technologies/appmodel.html), Kotlin, Groovy
-
-**Also start with [CopilotKit](https://cloud.copilotkit.ai/sign-in) [GCP](https://console.cloud.google.com/) / [ADK](https://docs.copilotkit.ai/adk)**
-  - need to review documentation
-
     
 ## Purpose
 
 The purpose of this wiki is to provide a centralized knowledge base for all employees. This includes technical documentation, project information, team structures, and more.
-
-**SMART**
-Organize and break down into steps
- - Spring boot/micronaut
- - React/type
- - Python/flask
- - .NET/blazor
- - [Go/gin](https://github.com/aws-containers/retail-store-sample-app/tree/main/src/ui/src/main/java/com/amazon/sample/ui/web)
 
 ## Contributing
 
@@ -155,7 +131,7 @@ By implementing these steps, you can create a robust scheduling system that inte
 
 
 ## Cart & Checkout
-<img src="scalableairoadmap.jpg" style="100px" />
+<img src="scalableairoadmap.jpg" width="200px" height="200px" />
 
 **Scope:** 
   - Online, brick-and-mortar, Shipt, Google Express; **critical impact on guest experience**
