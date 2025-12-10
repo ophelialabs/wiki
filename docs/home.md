@@ -1,5 +1,7 @@
 Find rss documentation, add journal and research sites for unified feed.
 
+How can I combine BOS with email notifications when an employee is <2 hrs of hitting overtime e.g. when an employee is about to hit compliance and a push notification can be sent to zebra devices
+
 **For Future Reference:** 
   - Create 2 VMs 
   - Shared Directory 
