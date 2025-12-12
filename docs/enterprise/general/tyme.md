@@ -1,4 +1,4 @@
-How can I combine BOS with email notifications when an employee is <2 hrs of hitting overtime e.g. when an employee is about to hit compliance and a push notification can be sent to zebra devices
+How can I add email to BOS for push notifications such as when an employee is >38 hrs or when no leader clocked in. Seperate duties to avoid alert fatigue. 
 
 To integrate a scheduling system that aligns with the EmployeeTime app, you can follow these steps:
 
