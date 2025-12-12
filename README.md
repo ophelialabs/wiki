@@ -1,8 +1,3 @@
-Use Flask and Jinja2 to create a site most similar to SharePoint. [Template](https://github.com/jlabclouds/Flask/tree/master)
- - Instruct users to setup Microsoft account, org email, GCP email integration with AAD (Entra), then add to tenant. Best way to setup this process for automation when a new hire is added to the org?
- - Also in tenant, how to setup deployment so that users are grouped by region?
- - Link OCI, IBM Azure, GCP, AWS and any others to Landing page for a unified setup process to show similarities and differences between platforms while taking advantage of free trial periods
-
 Upgraded the wiki to be more scalable and easier to manage. Here's a summary of the changes:
 
 Markdown Support: Articles are now written in Markdown (.md) for easier editing. I've included a library that renders the Markdown as HTML in the browser.
