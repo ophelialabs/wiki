@@ -22,6 +22,6 @@
 **Frameworks**
  - [Spring](https://start.spring.io/) boot/micronaut
  - React/type
- - [Python/flask](https://app-generator.dev/tools/flask-generator/)
+ - Python/flask [AppGenerator](https://app-generator.dev/tools/flask-generator/)/[Github](https://github.com/app-generator)
  - .NET/blazor
  - [Go/gin](https://github.com/aws-containers/retail-store-sample-app/tree/main/src/ui/src/main/java/com/amazon/sample/ui/web)
