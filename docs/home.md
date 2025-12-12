@@ -1,7 +1,3 @@
-Find rss documentation, add journal and research sites for unified feed.
-
-How can I combine BOS with email notifications when an employee is <2 hrs of hitting overtime e.g. when an employee is about to hit compliance and a push notification can be sent to zebra devices
-
 **For Future Reference:** 
   - Create 2 VMs 
   - Shared Directory 
@@ -9,14 +5,21 @@ How can I combine BOS with email notifications when an employee is <2 hrs of hit
   - Seperate by account 
   - Master
 
+**SMART**
+ - View project as a whole, organize and break down into steps
+   
+**Database:**
+ - Goldengate
+ - SQL Server
+ - DB Browser
+
 **Start with [SpringBoot](https://start.spring.io)**
   - Learn differences between [Java](https://www.oracle.com/java/technologies/appmodel.html), Kotlin, Groovy
 
 **Also start with [CopilotKit](https://cloud.copilotkit.ai/sign-in) [GCP](https://console.cloud.google.com/) / [ADK](https://docs.copilotkit.ai/adk)/[Strands](https://docs.copilotkit.ai/aws-strands)**
   - need to review documentation
 
-**SMART**
-Organize and break down into steps
+**Frameworks**
  - [Spring](https://start.spring.io/) boot/micronaut
  - React/type
  - [Python/flask](https://app-generator.dev/tools/flask-generator/)
