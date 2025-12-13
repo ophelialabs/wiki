@@ -11,7 +11,7 @@
 **Database:**
  - Goldengate
  - SQL Server
- - DB Browser
+ - [DB Browser](https://sqlitebrowser.org/)
 
 **Start with [SpringBoot](https://start.spring.io)**
   - Learn differences between [Java](https://www.oracle.com/java/technologies/appmodel.html), Kotlin, Groovy
