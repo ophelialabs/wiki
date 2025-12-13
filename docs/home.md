@@ -9,8 +9,8 @@
   - Master
    
 **Database:**
- - Goldengate
- - SQL Server
+ - [Goldengate](https://www.oracle.com/integration/goldengate/)
+ - ([SQL Server](https://www.microsoft.com/en-us/sql-server)/[WinServer](https://www.microsoft.com/en-us/evalcenter/evaluate-windows-server-2025))
  - [DB Browser](https://sqlitebrowser.org/)
 
 **Start with [SpringBoot](https://start.spring.io)**
