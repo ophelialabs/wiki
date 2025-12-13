@@ -1,12 +1,12 @@
+**SMART**
+ - View project as a whole, organize and break down into steps
+
 **For Future Reference:** 
   - Create 2 VMs 
   - Shared Directory 
   - IDE [(2)Code, (2)Insiders, (2)IntelliJ, (2)Eclipse) 
   - Seperate by account 
   - Master
-
-**SMART**
- - View project as a whole, organize and break down into steps
    
 **Database:**
  - Goldengate
