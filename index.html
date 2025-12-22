@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="layout/sidebar.css">
+    <script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
+    <script>
+        mermaid.initialize({ 
+            startOnLoad: false,
+            theme: 'dark',
+            securityLevel: 'loose',
+            themeVariables: {
+                primaryColor: '#0d0d0d',
+                primaryTextColor: '#fff',
+                primaryBorderColor: '#333',
+                fontSize: '14px',
+                fontFamily: 'Arial, sans-serif'
+            }
+        });
+    </script>
+</head>
+<body>
+    <div id="navbar"></div>
+    <div id="sidebar"></div>
+    <main id="main-content">
+        <div id="home" class="page active"></div>
+        <div id="pipeline" class="page"></div>
+        <div id="qsharp" class="page"></div>
+        <div id="qsharp2" class="page"></div>
+        <div id="data" class="page"></div>
+        <div id="hdf5" class="page"></div>
+        <div id="dashboard-overview" class="page"></div>
+        <div id="users-list" class="page"></div>
+        <div id="settings-general" class="page"></div>
+    </main>
+    
+    <script src="scripts.js"></script>
+    <script>
+        // Load navbar HTML into the div
+        fetch('layout/navbar.html')
+            .then(response => response.text())
+            .then(html => {
+                document.getElementById('navbar').innerHTML = html;
+                setTimeout(function() {
+                    initNavbar();
+                }, 50);
+            })
+            .catch(error => console.error('Error loading navbar:', error));
+
+        // Load sidebar HTML into the div
+        fetch('layout/sidebar.html')
+            .then(response => response.text())
+            .then(html => {
+                document.getElementById('sidebar').innerHTML = html;
+            })
+            .catch(error => console.error('Error loading sidebar:', error));
+
+        // Load page content dynamically
+        document.addEventListener('DOMContentLoaded', function() {
+            const pages = {
+                'home': 'pages/pipeline.html',
+                'pipeline': 'pages/pipeline.html',
+                'qsharp': 'pages/name/QSharp.html',
+                'qsharp2': 'pages/name/QSharp2.html',
+                'data': 'pages/name/data.html',
+                'hdf5': 'pages/name/hdf5.html',
+                'dashboard-overview': 'pages/dashboard/overview.html',
+                'users-list': 'pages/users/users-list.html',
+                'settings-general': 'pages/settings/settings-general.html'
+            };
+
+            const loadedPages = new Set();
+
+            // Load page content only when navigated to
+            function loadPageContent(pageId) {
+                if (loadedPages.has(pageId) || !pages.hasOwnProperty(pageId)) {
+                    return;
+                }
+                
+                fetch(pages[pageId])
+                    .then(response => response.text())
+                    .then(html => {
+                        const pageElement = document.getElementById(pageId);
+                        if (pageElement) {
+                            pageElement.innerHTML = html;
+                            loadedPages.add(pageId);
+                            // Render mermaid diagrams after content is loaded
+                            if (window.mermaid) {
+                                setTimeout(() => {
+                                    try {
+                                        mermaid.run();
+                                    } catch (err) {
+                                        console.warn('Error rendering mermaid diagrams:', err);
+                                    }
+                                }, 50);
+                            }
+                        }
+                    })
+                    .catch(error => console.warn(`Could not load ${pageId}:`, error));
+            }
+
+            // Handle page navigation via hash
+            function navigateToPage(hash) {
+                const pageId = hash.substring(1) || 'home';
+                
+                // Only navigate to pages if the hash matches a known page ID
+                if (pages.hasOwnProperty(pageId)) {
+                    // Load the page if not already loaded
+                    loadPageContent(pageId);
+                    
+                    const pageElements = document.querySelectorAll('.page');
+                    pageElements.forEach(page => page.classList.remove('active'));
+                    
+                    const targetPage = document.getElementById(pageId);
+                    if (targetPage) {
+                        targetPage.classList.add('active');
+                        // Trigger mermaid rendering when page becomes active
+                        if (window.mermaid) {
+                            setTimeout(() => {
+                                try {
+                                    mermaid.run();
+                                } catch (err) {
+                                    console.warn('Error rendering mermaid diagrams:', err);
+                                }
+                            }, 50);
+                        }
+                    }
+                } else if (pageId) {
+                    // For section anchors within pages, smooth scroll to the element
+                    const element = document.getElementById(pageId);
+                    if (element) {
+                        element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                    }
+                }
+            }
+
+            // Listen for hash changes
+            window.addEventListener('hashchange', function() {
+                navigateToPage(window.location.hash);
+            });
+
+            // Navigate to initial page
+            navigateToPage(window.location.hash);
+        });
+    </script>
+</body>
+</html>

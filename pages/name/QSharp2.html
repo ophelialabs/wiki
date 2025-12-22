@@ -1,0 +1,114 @@
+    <h1>Quantum IoT Advanced Computing Platform</h1>
+    <p class="lead">Enterprise-grade quantum computing framework integrating quantum algorithms, machine learning, and IoT edge computing.</p>
+
+    <h2>Architecture Overview</h2>
+
+    <div class="section">
+        <div class="diagram-title">Modular Approach: Targeted, Lightweight & Focused</div>
+        <div class="mermaid">
+graph TD
+    subgraph MODULAR["MODULAR APPROACH"]
+    direction TB
+
+    M_Start["User needs: Healthcare Imaging Solution"] --> M_Run["Run: generate_medical()"]
+    M_Run --> M_Box["Medical Specialization Module"]
+
+    subgraph M_Box ["Specialization: Medical"]
+        M_Dirs["src/Specializations/Medical/<br/>├── Imaging/<br/>└── Diagnostics/"]
+        M_Benefit["BENEFIT: Domain Isolation<br/>Only contains files relevant to healthcare.<br/>Zero distraction from ML or Robotics code."]
+    end
+
+    R_Start["User needs: Robot Arm Controller"] --> R_Run["Run: generate_robotics()"]
+    R_Run --> R_Box["Robotics Specialization Module"]
+
+    subgraph R_Box ["Specialization: Robotics"]
+        R_Dirs["src/Specializations/Robotics/<br/>├── Control/<br/>└── Sensing/"]
+        R_Benefit["BENEFIT: Hardware-Specific Focus<br/>Structure tailored for real-time loops.<br/>Lightweight footprint for embedded systems."]
+    end
+
+    S_Start["User needs: Run Shor's Algorithm"] --> S_Run["Run: generate_scientific()"]
+    S_Run --> S_Box["Scientific Core Module"]
+
+    subgraph S_Box ["Core Scientific Algorithms"]
+        S_Dirs["src/Quantum/Algorithms/<br/>├── QFT/<br/>├── Grover/<br/>└── Shor/"]
+        S_Benefit["BENEFIT: Foundational Research<br/>Pure algorithmic focus.<br/>Clear structure for benchmarking."]
+    end
+    end
+
+    Global_B["OVERALL ADVANTAGES:<br/>1. Reduced Cognitive Load<br/>2. Faster Setup Time<br/>3. Clear Ownership boundaries"]
+
+    M_Box -.-> Global_B
+    R_Box -.-> Global_B
+    S_Box -.-> Global_B
+        </div>
+    </div>
+
+    <div class="section
+        <div class="diagram-title">Integrated Ecosystem: Comprehensive & Synergistic</div>
+        <div class="mermaid">
+graph TD
+    subgraph INTEGRATED["INTEGRATED ECOSYSTEM"]
+    direction TB
+
+    User["Enterprise Quantum Platform"] --> RunFull["Project Setup"]
+    RunFull --> BigBox["QuantumProject.csproj"]
+
+    subgraph BigBox ["PROJECT ROOT"]
+        subgraph Layer1 ["Layer 1: Infrastructure & SDLC"]
+            L1_Config["Config/ - qubit setup"]
+            L1_Tests["Tests/ - Unit & Integration"]
+            L1_Docs["Docs/ - API & Tutorials"]
+            L1_Lib["Lib/ - Shared Code"]
+        end
+
+        subgraph Layer2 ["Layer 2: Quantum Foundations"]
+            L2_Circuits["src/Circuits/"]
+            L2_Utils["src/Quantum/Utils/"]
+            L2_Opt["src/Quantum/Optimization/"]
+        end
+
+        subgraph Layer3 ["Layer 3: Advanced Applications"]
+            L3_ML["src/ML/ - QNN, Kernels"]
+            L3_LLM["src/LLM/ - Transformers"]
+            L3_AI["src/AI/ - RL, Generative"]
+        end
+
+        L1_Tests -->|Validates| Layer2
+        L1_Tests -->|Validates| Layer3
+        L1_Lib -->|Used by| Layer2
+        L1_Lib -->|Used by| Layer3
+        L2_Circuits -->|Building Blocks| L3_ML
+        L2_Opt -->|Training Engines| L3_AI
+        L2_Utils -->|Required by| L3_LLM
+    end
+
+    Global_Full_B["ADVANTAGES:<br/>Standardization | Scalability | Complex Workflows"]
+    BigBox --> Global_Full_B
+    end
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="diagram-title">Project Component Dependencies</div>
+        <div class="mermaid">
+graph LR
+    Config["Config"]
+    Core["Core Quantum"]
+    ML["ML"]
+    Apps["Applications"]
+    Tests["Tests"]
+    Lib["Libraries"]
+    Opt["Optimization"]
+    
+    Config --> Core
+    Core --> ML
+    ML --> Apps
+    Tests --> Core
+    Tests --> ML
+    Tests --> Apps
+    Lib --> ML
+    Lib --> Apps
+    Core --> Opt
+    Opt --> ML
+        </div>
+    </div>
