@@ -1,0 +1,76 @@
+<section class="tools-section">
+    <h2>Tools You'll Master</h2>
+    <div class="tools-grid">
+        @foreach (var tool in Tools)
+        {
+            <a href="@tool.Value" target="_blank" rel="noopener noreferrer" class="tool-badge">
+                @tool.Key
+            </a>
+        }
+    </div>
+</section>
+
+@code {
+private Dictionary<string, string> Tools = new()
+{
+    // Engineering & Simulation
+    { "MATLAB", "www.mathworks.com" },
+    { "Simulink", "www.mathworks.com" },
+    { "CATIA", "www.3ds.com" },
+    { "SolidWorks", "www.solidworks.com" },
+    { "ANSYS", "https://www.ansys.com/" },
+    { "CFX", "" },
+    { "LabVIEW", "www.ni.com" },
+    { "AutoCAD", "www.autodesk.com" },
+    { "Civil 3D", "www.autodesk.com" },
+    { "SAP2000", "www.csiber.com" },
+    { "COMSOL", "www.comsol.com" },
+
+    // Chemistry & Molecular Modeling
+    { "ChemDraw", "revvitysignals.com" },
+    { "GAMESS", "www.msg.chem.iastate.edu" },
+    { "SMILES", "opensmiles.org" },
+    { "PyMOL", "www.pymol.org" },
+    { "Avogadro", "avogadro.cc" },
+    { "Spartan", "www.wavefun.com" },
+
+    // Data Science & Programming
+    { "Python", "www.python.org" },
+    { "R", "www.r-project.org" },
+    { "MySQL", "www.mysql.com" },
+    { "NumPy", "numpy.org" },
+    { "SciPy", "scipy.org" },
+    { "Pandas", "pandas.pydata.org" },
+    { "Matplotlib", "matplotlib.org" },
+    { "Seaborn", "seaborn.pydata.org" },
+    { "TensorFlow", "www.tensorflow.org" },
+    { "Keras", "keras.io" },
+    { "Power BI", "powerbi.microsoft.com" },
+    { "Mathematica", "www.wolfram.com" },
+    { "Wolfram Alpha", "www.wolframalpha.com" },
+
+    // AI & Automation
+    { "ChatGPT", "chatgpt.com" },
+    { "Gemini", "https://gemini.google.com" },
+    { "DALL-E", "openai.com" },
+    { "Zapier", "https://zapier.com" },
+
+    // Geospatial & Bioinformatics
+    { "ArcGIS", "www.esri.com" },
+    { "QGIS", "qgis.org" },
+    { "GDAL", "gdal.org" },
+    { "Leaflet", "leafletjs.com" },
+    { "BLAST", "blast.ncbi.nlm.nih.gov" },
+    { "ImageJ", "imagej.net" },
+
+    // Physics & Material Science
+    { "MCNP", "mcnp.lanl.gov" },
+    { "SCALE", "www.ornl.gov" },
+    { "Serpent", "serpent.vtt.fi" },
+    { "Geant4", "https://geant4.web.cern.ch/" },
+    { "Garfield++", "https://garfieldpp.web.cern.ch/" },
+    { "PhET", "phet.colorado.edu" },
+    { "Materials Project", "www.materialsproject.org" }
+};
+
+}
