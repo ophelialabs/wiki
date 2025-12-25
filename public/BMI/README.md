@@ -43,4 +43,4 @@
 - [NITRC (Neuroimaging Informatics Tools and Resources Clearinghouse)](https://www.nitrc.org/): A resource for finding a wide range of neuroimaging software applications and other tools.
 - [BrainStat](https://brainstat.readthedocs.io/en/master/): A toolbox designed for statistical analysis of neuroimaging data that can be used with both Python and MATLAB.
 
-- [bostonpiezooptics](https://www.bostonpiezooptics.com/optical-components)
+- [Bostonpiezooptics](https://www.bostonpiezooptics.com/optical-components): A resource for Optical Components
