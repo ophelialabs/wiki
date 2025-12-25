@@ -1,6 +1,5 @@
 ![banner](547935828_10166482413357355_964167318611828034_n.jpg)
-![banner](01_Gemini_Generated_Image_AwaitingExpansion.png)
-![banner](02_Gemini_Generated_Image_notquitebutclose.png)
+![banner](00_Gemini_Gen.png)
 ![banner](03_Gemini_Generated_Image_BMI-CTSS.png)
 ![banner](BMI.png)
  - DNN light stimulation.
