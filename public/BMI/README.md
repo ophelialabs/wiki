@@ -1,6 +1,7 @@
-![banner](https://github.com/ophelialabs/ophelialabs.github.io/blob/47e8a5b17f83073c4a5a0245cced77bb7ad10fb3/public/BMI/01_Gemini_Generated_Image_AwaitingExpansion.png)
-![banner](https://github.com/ophelialabs/ophelialabs.github.io/blob/17c5618261f2041571401ceb8018e27d1e8c9d57/public/BMI/02_Gemini_Generated_Image_notquitebutclose.png)
-![banner](https://github.com/ophelialabs/ophelialabs.github.io/blob/17c5618261f2041571401ceb8018e27d1e8c9d57/public/BMI/03_Gemini_Generated_Image_BMI-CTSS.png)
+<base href="/">
+![banner](public/BMI/01_Gemini_Generated_Image_AwaitingExpansion.png)
+![banner](/public/BMI/02_Gemini_Generated_Image_notquitebutclose.png)
+![banner](/public/BMI/03_Gemini_Generated_Image_BMI-CTSS.png)
  - DNN light stimulation.
  - *How can I see what they see?*
  ---
