@@ -7,7 +7,7 @@
  ---
  **This step is very important due to being able to open and close channels**
  ![banner](Gemini_Gen_meh.png)
- **Must do better with image, re-representation of spectrum and formation of bubble in a real-world setting horrible**
+ **Must do better with image, re-representation of spectrometry and formation of bubble in a real-world setting horrible**
  - [HyperSpectral](https://arxiv.org/abs/2508.18219)
  - [CoOp Behavior](https://www.science.org/doi/10.1126/science.adw8151)
  - Create open and close COM channels for collaboration
