@@ -9,5 +9,5 @@
  **This step is very important due to being able to open and close channels**
  - [HyperSpectral](https://arxiv.org/abs/2508.18219)
  - [CoOp Behavior](https://www.science.org/doi/10.1126/science.adw8151)
- - Create open and close channels for collaboration
+ - Create open and close COM channels for collaboration
  - Main focus is integrating into QNET
