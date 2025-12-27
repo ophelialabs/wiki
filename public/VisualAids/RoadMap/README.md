@@ -1,15 +1,6 @@
 ![banner](Gemini_Gen_RoadMap.png)
 
-1. SMART Project Roadmap
-To keep this from becoming overwhelming, we can break your vision into specific, measurable milestones.
-
-Phase	Specific Goal	Measurable Result
-Infra	Set up 2 VMs with a shared directory and IDE synchronization.	Successful "Hello World" sync between VM1 and VM2.
-Data	Integrate HorizonDB with GoldenGate for SQL Server replication.	Verified real-time data flow from SQL Server to HorizonDB.
-Logic	Build a SpringBoot backend using Java/Kotlin.	REST API endpoints active and connected to HorizonDB.
-Agents	Deploy a Multi-Agent system using Azure AI Foundry & ADK.	Master agent successfully routes tasks to worker agents.
-
-2. VM & Environment Setup
+1. VM & Environment Setup
 **IF using Cockpit Image Builder, an image can NOT be created on an alternate architecture. ie - Building IBM Image on an 86_64(ARM/INTEL)**
 
 To achieve a "Shared Directory" and "Separate by Account" workflow, consider the following architecture:
@@ -22,7 +13,7 @@ Tip: Keep your .git folder in the shared directory so that branch state is consi
 
 Accounts: Create dev-master and dev-worker accounts on the VMs to simulate a multi-user environment or permission-based testing.
 
-3. Modern Database Stack (2025)
+2. Modern Database Stack (2025)
 Azure HorizonDB
 
 This is Microsoft’s newest cloud-native PostgreSQL-compatible database. It is unique because it uses a Rust-based storage engine and supports the Model Context Protocol (MCP).
@@ -37,7 +28,7 @@ Use DB Browser for local, lightweight SQLite testing.
 
 Use the PostgreSQL extension in VS Code to manage HorizonDB, as it now includes "Metrics Intelligence" to help Copilot optimize your queries.
 
-4. Frameworks & Multi-Agent Orchestration
+3. Frameworks & Multi-Agent Orchestration
 SpringBoot: Java vs. Kotlin vs. Groovy
 
 Java (25): Best for stability and leveraging "Virtual Threads" (Project Loom) for high-concurrency agent tasks.
