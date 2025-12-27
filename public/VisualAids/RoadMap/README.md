@@ -12,7 +12,7 @@ Agents	Deploy a Multi-Agent system using Azure AI Foundry & ADK.	Master agent su
 2. VM & Environment Setup
 To achieve a "Shared Directory" and "Separate by Account" workflow, consider the following architecture:
 
-Shared Directory: Use VMware Shared Folders or Virtio-FS (for Linux/KVM). This allows your host machine to act as the "Source of Truth" while both VMs mount the same directory.
+Shared Directory: Use VMware Shared Folders or Virtio-FS/Cockpit (for Linux/KVM). This allows your host machine to act as the "Source of Truth" while both VMs mount the same directory.
 
 IDE Strategy: Since you mentioned VS Code Insiders and IntelliJ, use the Remote Development extensions.
 
