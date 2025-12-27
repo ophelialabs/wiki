@@ -57,3 +57,85 @@ Next Steps
 Would you like me to generate a docker-compose file to help simulate this multi-VM shared environment locally, or should we start by comparing a Java vs. Kotlin implementation for your first SpringBoot service?
 
 [Deep Dive](https://www.youtube.com/watch?v=BJxrSKAvCis) into Azure HorizonDB This video provides a technical deep dive into the architecture of HorizonDB, specifically explaining how its Rust-based storage and AI integration work for mission-critical workloads.
+<<<<<<< HEAD
+
+To simulate a multi-VM environment (Remember Kubernetes .yml file config for creating a master and worker) with a shared directory and separate database services locally, we can use Docker Compose. This setup mimics your "Master/Worker" architecture by using two distinct containers that share a persistent volume, alongside your database stack.
+
+Local Simulation Architecture
+
+In this setup:
+
+App-Master: Simulates your first VM (Master).
+
+App-Worker: Simulates your second VM.
+
+Shared-Data: A Docker volume that acts as the "Shared Directory" (Virtio-FS equivalent).
+
+DB-Layer: Containers for SQL Server and PostgreSQL (simulating HorizonDB).
+
+The docker-compose.yml File
+
+YAML
+services:
+  # Database: SQL Server (Legacy/Source)
+  sql-server:
+    image: mcr.microsoft.com/mssql/server:2022-latest
+    environment:
+      - ACCEPT_EULA=Y
+      - MSSQL_SA_PASSWORD=YourStrongPassword123!
+    ports:
+      - "1433:1433"
+
+  # Database: PostgreSQL (Simulating HorizonDB/Target)
+  horizondb-sim:
+    image: postgres:16-alpine
+    environment:
+      - POSTGRES_PASSWORD=postgres
+    ports:
+      - "5432:5432"
+
+  # VM 1: Master Environment
+  app-master:
+    image: eclipse-temurin:21-jdk # SpringBoot 3.x ready
+    container_name: vm-master
+    volumes:
+      - shared-workspace:/mnt/shared
+    environment:
+      - USER_ACCOUNT=master
+    command: /bin/sh -c "while true; do sleep 30; done" # Keeps it running
+
+  # VM 2: Worker Environment
+  app-worker:
+    image: eclipse-temurin:21-jdk
+    container_name: vm-worker
+    volumes:
+      - shared-workspace:/mnt/shared
+    environment:
+      - USER_ACCOUNT=worker
+    command: /bin/sh -c "while true; do sleep 30; done"
+
+volumes:
+  shared-workspace:
+    driver: local
+How to use this for your SMART goals:
+
+Test the Shared Directory:
+
+Exec into the Master: docker exec -it vm-master /bin/sh
+
+Create a file: echo "Hello from Master" > /mnt/shared/test.txt
+
+Exec into the Worker: docker exec -it vm-worker cat /mnt/shared/test.txt
+
+Result: You have confirmed the "Shared Directory" logic.
+
+Separate by Account: The USER_ACCOUNT environment variable allows your Spring Boot application to detect which "VM" it is running on and adjust its logic (e.g., Master node vs. Worker node behaviors).
+
+Database Connectivity: Your Spring Boot app (starting at start.spring.io) can now point its application.properties to jdbc:postgresql://horizondb-sim:5432/postgres.
+
+Next Step
+
+Since you mentioned starting with SpringBoot, would you like me to provide a basic Java controller that detects which "VM" it's on and logs the connection to the shared directory?
+=======
+
+>>>>>>> 2a37d6751c16567169acb3db617fb2e83de3aa4e
