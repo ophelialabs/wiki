@@ -57,7 +57,6 @@ Next Steps
 Would you like me to generate a docker-compose file to help simulate this multi-VM shared environment locally, or should we start by comparing a Java vs. Kotlin implementation for your first SpringBoot service?
 
 [Deep Dive](https://www.youtube.com/watch?v=BJxrSKAvCis) into Azure HorizonDB This video provides a technical deep dive into the architecture of HorizonDB, specifically explaining how its Rust-based storage and AI integration work for mission-critical workloads.
-<<<<<<< HEAD
 
 To simulate a multi-VM environment (Remember Kubernetes .yml file config for creating a master and worker) with a shared directory and separate database services locally, we can use Docker Compose. This setup mimics your "Master/Worker" architecture by using two distinct containers that share a persistent volume, alongside your database stack.
 
@@ -136,6 +135,4 @@ Database Connectivity: Your Spring Boot app (starting at start.spring.io) can no
 Next Step
 
 Since you mentioned starting with SpringBoot, would you like me to provide a basic Java controller that detects which "VM" it's on and logs the connection to the shared directory?
-=======
 
->>>>>>> 2a37d6751c16567169acb3db617fb2e83de3aa4e
