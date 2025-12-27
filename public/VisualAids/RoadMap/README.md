@@ -1,3 +1,5 @@
+![banner](public/VisualAids/RoadMap/Gemini_Gen_RoadMap.png)
+
 1. SMART Project Roadmap
 To keep this from becoming overwhelming, we can break your vision into specific, measurable milestones.
 
