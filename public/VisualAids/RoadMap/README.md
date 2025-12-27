@@ -6,6 +6,7 @@ Infra	Set up 2 VMs with a shared directory and IDE synchronization.	Successful "
 Data	Integrate HorizonDB with GoldenGate for SQL Server replication.	Verified real-time data flow from SQL Server to HorizonDB.
 Logic	Build a SpringBoot backend using Java/Kotlin.	REST API endpoints active and connected to HorizonDB.
 Agents	Deploy a Multi-Agent system using Azure AI Foundry & ADK.	Master agent successfully routes tasks to worker agents.
+
 2. VM & Environment Setup
 To achieve a "Shared Directory" and "Separate by Account" workflow, consider the following architecture:
 
